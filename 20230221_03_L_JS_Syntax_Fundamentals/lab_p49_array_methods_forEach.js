@@ -18,6 +18,6 @@ for (let i = 0; i < items.length; i++) {
 }                                               // copy contains [ 'item1', 'item2', 'item3' ]
 
 // ForEach
-items.forEach(item => {copy.push(item);});      // copy contains [ 'item1', 'item2', 'item3', 'item1', 'item2', 'item3' ]
+items.forEach(item => {copy.push(item);})      // copy contains [ 'item1', 'item2', 'item3', 'item1', 'item2', 'item3' ]
 
 console.log(copy);
