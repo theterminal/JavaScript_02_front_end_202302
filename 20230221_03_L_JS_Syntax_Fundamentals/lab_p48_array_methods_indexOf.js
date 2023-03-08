@@ -1,5 +1,5 @@
 // 20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
-// Array Methods - Pop, Push, Shift, Unshift, Splice, Reverse, Join, Slice, Includes, IndexOf, ForEach, Mapm, Find, Filter
+// Array Methods - Pop, Push, Shift, Unshift, Splice, Reverse, Join, Slice, Includes, IndexOf, ForEach, Map, Find, Filter
 
 
 // __________ indexOf() ___________
