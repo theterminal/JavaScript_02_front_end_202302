@@ -36,3 +36,23 @@ if (c > 10) {
 } else { 
   console.log("Equal to 10");
 }
+
+
+// ____________ check if a variable is undefined _____________
+
+let variableUndefined;
+if (variableUndefined) {
+  console.log(`${variableUndefined} - It is NOT undefined`);
+} else {
+  console.log(`${variableUndefined} - It is undefined`);                  // undefined - It is undefined
+}
+
+
+let variableUndefined2 = 10;
+if (variableUndefined2) {
+  console.log(`${variableUndefined2} - It is NOT undefined`);             // 10 - It is NOT undefined
+} else {
+  console.log(`${variableUndefined2} - It is undefined`);
+}
+
+// false, 0, -0, "", undefined, null, NaN - are falsy values! 
