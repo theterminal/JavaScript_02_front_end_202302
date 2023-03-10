@@ -4,7 +4,7 @@
 
 // ____________ For Loop ______________
 // Repeats until the condition is evaluated.
-// Incrementation in the condition.
+// Variable incremented in the condition.
 
 
 for (let i = 1; i <= 5; i++){
@@ -13,8 +13,8 @@ for (let i = 1; i <= 5; i++){
 
 
 // ____________ While Loop ______________
-// Does the same, but has different structure
-// Incrementation outside the condition
+// Does the same, but has different structure.
+// Variable is incremented outside the condition.
 
 
 let j = 1
