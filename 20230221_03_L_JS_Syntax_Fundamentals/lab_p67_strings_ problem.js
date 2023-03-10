@@ -1,6 +1,6 @@
 // 20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
 // Manipulating Strings
-// Problem: Count String Occurrencesd
+// Problem: Count String Occurrences
 
 
 // Receive a text and a word that you need to search
