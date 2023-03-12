@@ -1,0 +1,49 @@
+20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
+Problem 03 - Excellent Grade - judge: https://judge.softuni.org/Contests/Practice/Index/3785#2
+
+
+Write a function that receives a single number and checks if the grade is excellent or not.
+If it is, print "Excellent", otherwise print "Not excellent".
+
+
+Test Data:
+---------------------------
+
+Input 1:
+-------
+5.50
+
+
+Output 1:
+--------
+Excellent
+
+
+---------------------------
+
+
+Input 2:
+-------
+4.35
+
+
+Output 2:
+--------
+Not excellent
+
+
+---------------------------
+
+
+Hints:
+-----
+Check if the number given is greater or equal to 5.50 and print the corresponding result.
+
+
+function solve(grade) {
+    if (grade >= 5.50) {
+        console.log('Excellent');
+    } else {
+        // TODO
+    }
+}
