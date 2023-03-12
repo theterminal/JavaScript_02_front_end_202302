@@ -1,0 +1,68 @@
+20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
+Problem 02 - Student Information - judge: https://judge.softuni.org/Contests/Practice/Index/3785#1
+
+
+You will be given 3 parameters – student name (string), age (number), and average grade (number).
+
+Your task is to print all the info about the student in the following format: 
+`Name: {student name}, Age: {student age}, Grade: {student grade}`
+
+Note: The grade should be formatted to the second decimal point.
+
+
+
+Test Data:
+---------------------------
+
+Input 1:
+-------
+'John', 15, 5.54678
+
+
+Output 1:
+--------
+Name: John, Age: 15, Grade: 5.55
+
+
+---------------------------
+
+
+Input 2:
+-------
+'Steve', 16, 2.1426
+
+
+Output 2:
+--------
+Name: Steve, Age: 16, Grade: 2.14
+
+
+---------------------------
+
+
+Input 3:
+-------
+'Marry', 12, 6.00
+
+
+Output 3:
+--------
+Name: Marry, Age: 12, Grade: 6.00
+
+
+---------------------------
+
+
+Hints:
+-----
+Use toFixed() method to format the grade.
+
+First, receive the input:
+
+    function solve(name, age, grade) {
+
+    }
+
+Print the output:
+
+    console.log(`Name: {student name}, Age: {student age}, Grade: {student grade}`)
