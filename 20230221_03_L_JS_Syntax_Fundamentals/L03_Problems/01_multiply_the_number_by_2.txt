@@ -1,0 +1,66 @@
+Multiply the Number by 2
+
+
+Write a function that receives a number and prints as result that number multiplied by two.
+
+
+Test Data:
+---------------------------
+
+Input 1:
+-------
+2
+
+Output 1:
+--------
+4
+
+
+---------------------------
+
+
+Input 2:
+-------
+5
+
+Output 2:
+--------
+10
+
+
+---------------------------
+
+
+Input 3:
+-------
+20
+
+Output 3:
+--------
+40
+
+
+---------------------------
+
+
+Hints:
+-----
+Create a function called solve (or some other name).
+As parameters, it will receive a number num.
+
+                        function solve(number) {
+                            
+                        }
+
+Print the result inside the function.
+
+                        function solve(number) {
+                            console.log(number * 2);
+                        }
+
+If you want to test your code locally, you need to call the function.
+
+                        function solve(number) {
+                            console.log(number * 2);
+                        }
+                        solve(2);
