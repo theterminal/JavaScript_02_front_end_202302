@@ -1,0 +1,51 @@
+20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
+Problem 06 - Largest Number - judge: https://judge.softuni.org/Contests/Practice/Index/3785#5
+
+
+Write a function that takes three number arguments as input and finds the largest of them.
+Print the following text on the console:  `The largest number is {number}.`.
+The input comes as three number arguments passed to your function.
+The output should be printed to the console.
+
+
+Test Data:
+---------------------------
+
+Input 1:
+-------
+5, -3, 16
+
+
+Output 1:
+--------
+The largest number is 16.
+
+
+---------------------------
+
+
+Input 2:
+-------
+-3, -5, -22.5
+
+
+Output 2:
+--------
+The largest number is -3.
+
+
+---------------------------
+
+
+Hints:
+-----
+
+-> Write a function that receives three number arguments.
+
+-> Declare a variable named 'result' that will keep the result.
+
+-> Make several checks to find out the largest of the three numbers. Start with num1.
+
+-> Do the same for the others.
+
+-> Print the result on the console.
