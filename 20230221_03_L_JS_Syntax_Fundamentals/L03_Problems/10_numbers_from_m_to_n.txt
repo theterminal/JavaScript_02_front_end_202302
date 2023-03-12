@@ -1,0 +1,57 @@
+20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
+Problem 10 - Numbers from M to N - judge: https://judge.softuni.org/Contests/Practice/Index/3785#9
+
+
+Write a function that receives a number M and a number N (M will always be bigger than N).
+Print all numbers from M to N.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+6, 2
+
+
+Output 1:
+--------
+6
+5
+4
+3
+2
+
+
+---------------------------
+
+
+Input 2:
+-------
+4, 1
+
+
+Output 2:
+--------
+4
+3
+2
+1
+
+
+---------------------------
+
+
+Hints:
+-----
+Use for or while loop and print the numbers.
+
+
+function numbersFromMToN(m, n) {
+    for (let i = m; i >= n; i--) {
+        console.log(i);       
+    }
+}
+
+numbersFromMToN(6, 2);
