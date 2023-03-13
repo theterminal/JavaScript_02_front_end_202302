@@ -24,6 +24,9 @@ console.log(c);
 c = a % b;
 console.log(c);
 
+c = ~~(a / b);
+console.log(c);                                         // 3  (Integer division in JS using Bitwise Operator Method. Can use floor() or trunc() methods.)
+
 c = a ** b;
 console.log(c);
 
