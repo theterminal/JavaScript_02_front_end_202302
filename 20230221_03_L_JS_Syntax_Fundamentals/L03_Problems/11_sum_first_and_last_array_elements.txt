@@ -1,0 +1,62 @@
+20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
+Problem 11 - Sum First and Last Array Elements - judge: https://judge.softuni.org/Contests/Practice/Index/3785#10
+
+
+Write a function that receives an array of numbers and prints the sum of the first and last element in that array.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+[20, 30, 40]
+
+
+Output 1:
+--------
+60
+
+
+---------------------------
+
+
+Input 2:
+-------
+[10, 17, 22, 33]
+
+
+Output 2:
+--------
+43
+
+
+---------------------------
+
+
+Input 3:
+-------
+[11, 58, 69]
+
+
+Output 3:
+--------
+80
+
+
+---------------------------
+
+
+Hints:
+-----
+
+
+You can access the last element in an array by subtracting 1 from its length:
+
+
+function solve(input) {
+    let first = input[0];
+    let last = input[input.length - 1];
+    console.log(first + last);
+}
