@@ -61,3 +61,19 @@ let result3 = num3 >= 0 && num3 <= -1                                           
 : 'Not in between';
 
 console.log(result3);                                                            // Not in between
+
+
+// ________ Number Min Safe Integer and Number Max Safe Integer
+
+
+let minSafeInteger = Number.MIN_SAFE_INTEGER;
+let maxSafeInteger = Number.MAX_SAFE_INTEGER;
+
+console.log(minSafeInteger);                                                    // -9007199254740991  (-9'007'199'254'740'991)
+console.log(maxSafeInteger);                                                    // 9007199254740991   ( 9'007'199'254'740'991)
+
+
+// ________ operation ~~(a / b) _________
+
+
+console.log(~~(4 / 3));                                                         // 1 
