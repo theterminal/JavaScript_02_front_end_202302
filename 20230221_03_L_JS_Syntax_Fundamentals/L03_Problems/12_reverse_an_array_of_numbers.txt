@@ -1,0 +1,74 @@
+20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
+Problem 12 - Reverse an Array of Numbers - judge: https://judge.softuni.org/Contests/Practice/Index/3785#11
+
+
+Write a program, which receives a number n and an array of elements.
+Your task is to create a new array with n numbers from the original array, reverse it and print its elements on a single line, space-separated.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+3, [10, 20, 30, 40, 50]
+
+
+Output 1:
+--------
+30 20 10
+
+
+---------------------------
+
+
+Input 2:
+-------
+4, [-1, 20, 99, 5]
+
+
+Output 2:
+--------
+5 99 20 -1
+
+
+---------------------------
+
+
+Input 3:
+-------
+2, [66, 43, 75, 89, 47]
+
+
+Output 3:
+--------
+43 66
+
+
+---------------------------
+
+
+Hints:
+-----
+
+_________ Use push() to add elements inside the new array __________
+
+
+function reverse(n, inputArray) {
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        // TODO
+    }
+
+
+_________ Use string interpolation for the output __________________
+
+
+let output = '';
+for (let i = arr.length - 1; i >= 0; i--) {
+    // TODO
+}
+
+console.log(output);
+}
