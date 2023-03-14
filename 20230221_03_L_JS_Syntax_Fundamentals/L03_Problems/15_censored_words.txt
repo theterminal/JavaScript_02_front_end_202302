@@ -1,0 +1,53 @@
+20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
+Problem 15 - Censored Words - judge: https://judge.softuni.org/Contests/Practice/Index/3785#14
+
+
+Write a function that receives a text as a first parameter and a single word as a second.
+Find all occurrences of that word in the text and replace them with the corresponding count of '*'.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+'A small sentence with some words', 'small'
+
+
+Output 1:
+--------
+A ***** sentence with some words
+
+
+---------------------------
+
+
+Input 2:
+-------
+'Find the hidden word', 'hidden'
+
+
+Output 2:
+--------
+Find the ****** word
+
+
+---------------------------
+
+
+Hint:
+----
+
+(*) Save the new text in a new variable.
+
+function solve(text, word) {
+    let censored = text.replace(word, repeat(word));
+    while (censored.includes(word)) {
+        censored = censored.replace(word, repeat(word));
+
+    // TODO: create the repeat function
+    } 
+}
+
+(*) The repeat() function should take the length of the word and return that amount of stars '*'.
