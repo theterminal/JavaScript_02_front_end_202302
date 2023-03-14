@@ -1,0 +1,50 @@
+20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
+Problem 14 - Substring - judge: https://judge.softuni.org/Contests/Practice/Index/3785#13
+
+
+Write a function that receives a string and two numbers.
+The numbers will be a starting index and count of elements to substring.
+Print the result.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+'ASentence', 1, 8
+
+
+Output 1:
+--------
+Sentence
+
+
+---------------------------
+
+
+Input 2:
+-------
+'SkipWord', 4, 7
+
+
+Output 2:
+--------
+Word
+
+
+---------------------------
+
+
+Hint:
+----
+(*) Create a new string that takes the needed amount of elements from the given string.
+
+
+function solve(string, startIndex, count) {
+    let result;
+    // TODO: substring 
+
+    console.log(result);
+}
