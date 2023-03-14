@@ -1,0 +1,73 @@
+20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
+Problem 16 - Count String Occurrences - judge: https://judge.softuni.org/Contests/Practice/Index/3785#15
+
+
+Write a function that receives a text and a single word that you need to search.
+Print the number of all occurrences of this word in the text.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+'This is a word and it also is a sentence', 'is'
+
+
+Output 1:
+--------
+2
+
+
+---------------------------
+
+
+Input 2:
+-------
+'softuni is great place for learning new programming languages', 'softuni'
+
+
+Output 2:
+--------
+1
+
+
+---------------------------
+
+
+Hint:
+----
+
+
+Split the sentence into words and create a counter that stores how many times the searched word occurs.
+
+
+
+
+
+// _____________ version 1 _____________ using 'for' loop
+
+
+function countStringOccurrences(text, word) {
+    let wordsArr = text.split(' ');
+    let counter = 0;
+
+    // __________ version 1 - 'for' loop _____________ use 'version 1' or 'version 2'
+
+    for (let i = 0; i < wordsArr.length; i++) {
+        if (wordsArr[i] === word) {
+            counter++;
+        }
+    }
+
+    // __________ version 2 - 'for-of' loop __________ use 'version 1' or 'version 2'
+
+    for (const wrd of wordsArr) {
+        if (wrd === word) {
+            counter++;
+        }
+    }
+
+    console.log(counter);
+}
