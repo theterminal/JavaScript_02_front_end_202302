@@ -17,3 +17,12 @@ let roots = numbers.map(function(num) {
 
 console.log(roots);                 // roots is now [1, 2, 3]
 console.log(numbers);               // numbers is still [1, 4, 9]
+
+
+// Another syntax of same method
+
+
+let powers = [2, 4, 5]
+	.map((num) => num ** 2);
+
+console.log(powers);				// [ 4, 16, 25 ]
