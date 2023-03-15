@@ -5,7 +5,7 @@
 // __________ forEach() ___________
 
 
-// The forEach() method executes a provided function once for each array element
+// The forEach() method executes a provided function once for each array element. It is a 'read-only' method.
 // Converting a for loop to forEach
 
 
@@ -15,9 +15,19 @@ const copy = [];
 // For loop
 for (let i = 0; i < items.length; i++) {
   copy.push(items[i]);
-}                                               // copy contains [ 'item1', 'item2', 'item3' ]
+}
+
+console.log(copy);                              // [ 'item1', 'item2', 'item3' ]
+
 
 // ForEach
-items.forEach(item => {copy.push(item);})      // copy contains [ 'item1', 'item2', 'item3', 'item1', 'item2', 'item3' ]
+items.forEach(item => {copy.push(item);})
 
-console.log(copy);
+console.log(copy);                              // [ 'item1', 'item2', 'item3', 'item1', 'item2', 'item3' ]
+
+
+// ForEach (another syntax)
+items.
+  forEach(item => {copy.push(item);})
+
+console.log(copy);                              // ['item1', 'item2', 'item3', 'item1', 'item2', 'item3', 'item1', 'item2', 'item3' ]
