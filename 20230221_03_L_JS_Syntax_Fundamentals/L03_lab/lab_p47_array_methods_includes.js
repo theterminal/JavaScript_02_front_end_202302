@@ -5,7 +5,7 @@
 // __________ includes() ___________
 
 
-// Determines whether an array contains a certain element, returning true or false as appropriate
+// Determines whether an array contains a certain element, returning true or false as appropriate.
 
 
 // array length is 3
