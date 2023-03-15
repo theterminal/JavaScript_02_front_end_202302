@@ -1,5 +1,5 @@
 // 20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
-// Problem 12 - Reverse an Array of Numbers - judge: https://judge.softuni.org/Contests/Practice/Index/3785#10
+// Problem 12 - Reverse an Array of Numbers - judge: https://judge.softuni.org/Contests/Practice/Index/3785#11
 
 
 function reverseAnArrayOfNumbers(n, inputArray) {
