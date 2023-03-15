@@ -1,5 +1,5 @@
 // 20230221 - JavaScript Front-End 202302 - JS Syntax Fundamentals
-// Arrays
+// What is an Array
 
 
 // ____________ What are arrays ______________
@@ -16,6 +16,22 @@ let numbers = [10, 20, 30, 40, 50];
 // An array's length can be changed at any time.
 // Data can be stored at non-contiguous locations in the array.
 // JavaScript arrays are not guaranteed to be dense.
+
+
+console.log('\n____________ Declaring an Array ______________\n');
+console.log(`See the full documentation here: \n
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array`);
+
+
+let array_1 = new Array;                                            // method 1 of declaring an array (empty array)
+console.log(array_1);                                               // []
+
+let array_2 = [];                                                   // method 2 of declaring an array (empty array)
+console.log(array_2);                                               // []
+
+const array_3 = new Array(7);                                       // declaration of a new Array with length of 7 (7 empty elements)
+console.log(array_3);                                               // [ <7 empty items> ]
+console.log(array_3.length);                                        // 7
 
 
 // ____________ Arrays of Different Types _____________
