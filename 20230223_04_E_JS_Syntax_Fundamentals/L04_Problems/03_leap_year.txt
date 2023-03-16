@@ -1,0 +1,52 @@
+20230223 - JavaScript Front-End 202302 - JS Syntax Fundamentals - Exercise
+Problem 03 - Leap Year - judge: https://judge.softuni.org/Contests/Compete/Index/3786#2
+
+
+Write a JS function to check whether a year is a leap.
+Leap years are either divisible by 4 but not by 100 or are divisible by 400.
+The output should be following:
+If the year is a leap, print: "yes"
+Otherwise, print: "no"
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+1984
+
+
+Output 1:
+--------
+yes
+
+
+---------------------------
+
+
+Input 2:
+-------
+2003
+
+
+Output 2:
+--------
+no
+
+
+---------------------------
+
+
+Input 3:
+-------
+4
+
+
+Output 3:
+--------
+yes
+
+
+---------------------------
