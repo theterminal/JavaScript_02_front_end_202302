@@ -1,5 +1,5 @@
 20230223 - JavaScript Front-End 202302 - JS Syntax Fundamentals - Exercise
-Problem 04 - Print and Sum - judge: https://judge.softuni.org/Contests/Compete/Index/37863
+Problem 04 - Print and Sum - judge: https://judge.softuni.org/Contests/Compete/Index/3786#3
 
 
 Write a function that displays numbers from given start to given end and their sum.
