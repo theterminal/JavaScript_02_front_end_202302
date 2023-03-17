@@ -1,0 +1,51 @@
+20230223 - JavaScript Front-End 202302 - JS Syntax Fundamentals - Exercise
+Problem 07 - Chars to String - judge: https://judge.softuni.org/Contests/Compete/Index/3786#6
+
+
+Write a function, which receives 3 parameters.
+Each parameter is a single character.
+Combine all the characters into one string and print it on the console.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+'a', 'b', 'c'
+
+
+Output 1:
+--------
+abc
+
+
+---------------------------
+
+
+Input 2:
+-------
+'%', '2', 'o'
+
+
+Output 2:
+--------
+%2o
+
+
+---------------------------
+
+
+Input 3:
+-------
+'1', '5', 'p'
+
+
+Output 3:
+--------
+15p
+
+
+---------------------------
+
