@@ -1,0 +1,60 @@
+20230223 - JavaScript Front-End 202302 - JS Syntax Fundamentals - Exercise
+Problem 13 - Array Rotation  - judge: https://judge.softuni.org/Contests/Compete/Index/3786#12
+
+
+Write a function that receives an array and the number of rotations you have to perform. 
+
+Note: Depending on the number of rotations, the first element goes to the end.
+
+
+Output:
+------
+Print the resulting array elements separated by a single space.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+[51, 47, 32, 61, 21], 2
+
+
+Output 1:
+--------
+32 61 21 51 47
+
+
+---------------------------
+
+
+Input 2:
+-------
+[32, 21, 61, 1], 4
+
+
+Output 2:
+--------
+32 21 61 1
+
+
+---------------------------
+
+
+Input 3:
+-------
+[2, 4, 15, 31], 5
+
+
+Output 3:
+--------
+4 15 31 2
+
+
+---------------------------
+
+
+Hints:
+-----
+Return all the elements with for loop, incrementing the loop variable with the value of the step variable.
