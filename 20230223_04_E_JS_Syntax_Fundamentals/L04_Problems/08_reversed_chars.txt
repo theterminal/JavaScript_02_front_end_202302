@@ -1,0 +1,35 @@
+20230223 - JavaScript Front-End 202302 - JS Syntax Fundamentals - Exercise
+Problem 08 - Reversed Chars - judge: https://judge.softuni.org/Contests/Compete/Index/3786#7
+
+
+Write a program that takes 3 parameters (characters) and prints them in reversed order with a space between them.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+'A', 'B', 'C'
+
+
+Output 1:
+--------
+C B A
+
+
+---------------------------
+
+
+Input 2:
+-------
+'1', 'L', '&'
+
+
+Output 2:
+--------
+& L 1
+
+
+---------------------------
