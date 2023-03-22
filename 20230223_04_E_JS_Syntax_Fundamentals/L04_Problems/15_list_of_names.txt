@@ -1,0 +1,31 @@
+20230223 - JavaScript Front-End 202302 - JS Syntax Fundamentals - Exercise
+Problem 15 - List of Names - judge: https://judge.softuni.org/Contests/Compete/Index/3786#14
+
+
+You will receive an array of names.
+Sort them alphabetically in ascending order and print a numbered list of all the names, each on a new line.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+["John", "Bob", "Christina", "Ema"]
+
+
+Output 1:
+--------
+1.Bob
+2.Christina
+3.Ema
+4.John
+
+
+---------------------------
+
+
+Hints:
+-----
+The sort function rearranges the array in ascending order
