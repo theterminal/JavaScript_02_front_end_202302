@@ -2,6 +2,9 @@
 // Problem 04 - Print and Sum - judge: https://judge.softuni.org/Contests/Compete/Index/3786#3
 
 
+// __________________ version 1 ______ using concatenation ______
+
+
 function printAndSum(start, end) {
     let total = 0;
     let result = [];
@@ -15,16 +18,37 @@ function printAndSum(start, end) {
         console.log(`The range is flipped!`)
     }
 
-    console.log(result);
+    console.log(result.trim());
     console.log(`Sum: ${total}`);
 }
 
 
-printAndSum(5, 10);                                     // 5 6 7 8 9 10
-                                                        // Sum: 45
+printAndSum(5, 10);
+printAndSum(0, 26);
+printAndSum(50, 60);
 
-printAndSum(0, 26);                                     // 0 1 2 … 26
-                                                        // Sum: 351
 
-printAndSum(50, 60);                                    // 50 51 52 53 54 55 56 57 58 59 60
-                                                        // Sum: 605            
+// __________________ version 2 _____ using join() method _____
+
+
+function printAndSum2(start2, end2) {
+    let total2 = 0;
+    let result2 = [];
+    
+    if (start2 <= end2) {
+        for (let i = start2; i <= end2; i++) {
+            result2.push(i);
+            total2 += i;
+        }
+    } else {
+        console.log(`The range is flipped!`)
+    }
+
+    console.log(result2.join(' '));
+    console.log(`Sum: ${total2}`);
+}
+
+
+printAndSum2(5, 10);
+printAndSum2(0, 26);
+printAndSum2(50, 60);
