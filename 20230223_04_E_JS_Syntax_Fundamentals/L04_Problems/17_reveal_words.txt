@@ -1,0 +1,40 @@
+20230223 - JavaScript Front-End 202302 - JS Syntax Fundamentals - Exercise
+Problem 17 - Reveal Words - judge: https://judge.softuni.org/Contests/Compete/Index/3786#16
+
+
+Write a function, which receives two parameters. 
+The first parameter will be a string with some words separated by ', '.
+The second parameter will be a string that contains templates containing '*'.
+Find the word with the same length as the template and replace it.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+'great',
+'Internet is a ***** environment for learning new programming languages'
+
+
+Output 1:
+--------
+Internet is a great environment for learning new programming languages
+
+
+---------------------------
+
+
+Input 2:
+-------
+'great, learning',
+'Internet is a ***** environment for ******** new programming languages'
+
+
+Output 2:
+--------
+Internet is a great environment for learning new programming languages
+
+
+---------------------------
