@@ -127,3 +127,97 @@ let sortedStringArray4 = stringArray4.sort((a, b) => {
 });
 
 console.log(sortedStringArray4);
+
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+// _______________________More information on sort() _____________
+console.log('\n ____________ More information on sort() _____________');
+console.log('https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort \n');
+
+
+const numericArray = [40, 1, 5, 200];
+const numericStringArray = ['80', '9', '700'];
+const numericStringArrayMixed = ['80', '9', '700', 40, 1, 5, 200];
+
+function sortingAB(a, b) {
+    return a - b;                                          // It'll sort the array in Ascending Order 
+}
+
+console.log(numericArray.sort());                          // [ 1, 200, 40, 5 ]                        - result if using just .sort() method
+console.log(numericArray.sort(sortingAB));                 // [ 1, 5, 40, 200 ]                        - result if using .sort() method with defining function
+console.log([12, 0, -7].sort(sortingAB));                  // [ -7, 0, 12 ]                            - result if applied directly to an array
+console.log(numericArray);                                      // [ 1, 5, 40, 200 ]                        - original array is modified
+
+console.log(numericStringArray.sort(sortingAB));           // [ '9', '80', '700' ]                     - it sorts it
+
+console.log(numericStringArrayMixed.sort(sortingAB));      // [ 1, 5, '9', 40, '80', 200, '700' ]      - It sorts it
+
+
+console.log('_____________ Sorting in Descending Order _______________');
+
+
+const numericArray2 = [40, 1, 5, 200];
+const numericStringArray2 = ['80', '9', '700'];
+const numericStringArrayMixed2 = ['80', '9', '700', 40, 1, 5, 200];
+
+function sortingAB(a, b) {
+    return b - a;                                          // It'll sort the array in Ascending Order 
+}
+
+console.log(numericArray2.sort());                         // [ 1, 200, 40, 5 ]                        - result if using just .sort() method
+console.log(numericArray2.sort(sortingAB));                // [ 200, 40, 5, 1 ]                        - result if using .sort() method with defining function
+console.log([12, 0, -7].sort(sortingAB));                  // [ 12, 0, -7 ]                            - result if applied directly to an array
+console.log(numericArray2);                                // [ 200, 40, 5, 1 ]                        - original array is modified
+
+console.log(numericStringArray2.sort(sortingAB));          // [ '700', '80', '9' ]                     - it sorts it
+
+console.log(numericStringArrayMixed2.sort(sortingAB));     // [ '700', 200, '80', 40, '9', 5, 1 ]      - It sorts it
+
+
+// ---------------------------------------------------------------------------------------
+
+
+console.log('\n _____________ Test ____________ \n');
+
+
+const numericArr = [34, -23, 12, 456, 0, 3, -11];
+const stringArr = ['Kiril', 'Kiro', 'Ilina', 'Krisito', 'Marty'];
+
+function sortingAscending(a, b) {return a - b;}
+function sortingDescending(a, b) {return b - a;}
+
+function ascendingArray(numericArr) {
+    return numericArr.sort(sortingAscending);
+}
+
+function descendingArray(numericArr) {
+    return numericArr.sort(sortingDescending);
+}
+
+
+console.log(ascendingArray(numericArr));
+console.log(descendingArray(numericArr));
+
+
+console.log('\n _____________ Function to order Ascending or Descending Numbers Array or String Array ____________ \n');
+
+
+const numericA = [34, -23, 12, 456, 0, 3, -11];
+const stringA = ['Kiril', 'Kiro', 'Ilina', 'Krisito', 'Marty'];
+
+function sortingAscendingNumber(a, b) {return a - b;}
+function sortingDescendingNumber(a, b) {return b - a;}
+function sortingAscendingString(a, b) {return a.localeCompare(b)}
+function sortingDescendingString(a, b) {return b.localeCompare(a)}
+
+function ascendingOrder(inputArray) {
+    if (typeof(inputArray[0]) === 'string') {
+         return [...inputArray].sort(sortingAscendingString);
+    } else if (typeof(inputArray[0]) === 'number') {
+         return [...inputArray].sort(sortingAscendingNumber);
+     }
+}
+
+
+console.log(ascendingOrder(numericA));
+console.log(ascendingOrder(stringA));
