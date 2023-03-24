@@ -11,10 +11,10 @@
 console.log('\n _____ ex. 1 _____ sort() ________________________________________________________________________ \n');
 
 
-let stringArray1 = ['Jerry', 'Bob', 'Apple'];
+let stringArray1 = ['Jerry', 'Bob', 'Apple', 'apple'];
 stringArray1.sort();
 
-console.log(stringArray1);                               // [ 'Apple', 'Bob', 'Jerry' ]          - It sorts the string array in ascending order
+console.log(stringArray1);                               // [ 'Apple', 'Bob', 'Jerry', 'apple' ]          - It sorts the string array in ascending order using the ASCii table!!!
 
 
 // -------------------------------------------------------------------------------------------------------------------
@@ -24,10 +24,10 @@ console.log(stringArray1);                               // [ 'Apple', 'Bob', 'J
 console.log('\n _____ ex. 2 _____ reverse() _____________________________________________________________________ \n');
 
 
-let stringArray2 = ['Jerry', 'Bob', 'Apple'];
+let stringArray2 = ['Jerry', 'Bob', 'Apple', 'apple'];
 stringArray2.reverse();
 
-console.log(stringArray2);                               // [ 'Apple', 'Bob', 'Jerry' ]          - It reverses a string array in the revered order
+console.log(stringArray2);                               // [ 'apple', 'Apple', 'Bob', 'Jerry' ]          - It reverses a string array in the revered order
 
 
 // -------------------------------------------------------------------------------------------------------------------
