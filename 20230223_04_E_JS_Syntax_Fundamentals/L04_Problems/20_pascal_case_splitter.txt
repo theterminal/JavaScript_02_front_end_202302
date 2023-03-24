@@ -1,0 +1,51 @@
+20230223 - JavaScript Front-End 202302 - JS Syntax Fundamentals - Exercise
+Problem 20 - Pascal Case Splitter - judge: https://judge.softuni.org/Contests/Compete/Index/3786#19
+
+
+You will receive a single string. 
+This string is written in PascalCase format.
+Your task here is to split this string by every word in it. 
+Print them joined by comma and space.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+'SplitMeIfYouCanHaHaYouCantOrYouCan'
+
+
+Output 1:
+--------
+Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can
+
+
+---------------------------
+
+
+Input 2:
+-------
+'HoldTheDoor'
+
+
+Output 2:
+--------
+Hold, The, Door
+
+
+---------------------------
+
+
+Input 3:
+-------
+'ThisIsSoAnnoyingToDo'
+
+
+Output 3:
+--------
+This, Is, So, Annoying, To, Do
+
+
+---------------------------
