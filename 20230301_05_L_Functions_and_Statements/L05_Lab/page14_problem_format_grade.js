@@ -4,7 +4,7 @@
 
 function formatGrade(grade) {
     if (grade < 3) {
-        console.log(`Fail (2)}`);                                   // That is how the conditions are given!
+        console.log(`Fail (2)`);                                   // That is how the conditions are given!
     } else if (grade < 3.50) {
         console.log(`Poor ${grade}`);
     } else if (grade < 4.50) {
