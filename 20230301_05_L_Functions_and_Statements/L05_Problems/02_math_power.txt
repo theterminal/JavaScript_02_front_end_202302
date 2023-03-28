@@ -1,0 +1,35 @@
+20230301 - JavaScript Front-End 202302 - JS Functions and Statements
+02 - Math Power - judge: https://judge.softuni.org/Contests/Practice/Index/3788#1
+
+
+Write a function that calculates and print the value of a number raised to a given power:
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+2, 8
+
+
+Output 1:
+--------
+256
+
+
+---------------------------
+
+
+Input 2:
+-------
+3, 4
+
+
+Output 2:
+--------
+81
+
+
+---------------------------
