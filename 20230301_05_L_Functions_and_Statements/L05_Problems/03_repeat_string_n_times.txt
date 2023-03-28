@@ -1,0 +1,45 @@
+20230301 - JavaScript Front-End 202302 - JS Functions and Statements
+03 - Repeat String N Times - judge: https://judge.softuni.org/Contests/Practice/Index/3788#2
+
+
+Write a function that receives a string and a repeat count n.
+The function should return a new string (the old one repeated n times).
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+"abc", 3
+
+
+Output 1:
+--------
+abcabcabc
+
+
+---------------------------
+
+
+Input 2:
+-------
+"String", 2
+
+
+Output 2:
+--------
+StringString
+
+
+---------------------------
+
+
+Hints:
+-----
+Use a loop or another method to repeat the input string.
+Use the return operator to produce the result.
+
+
+---------------------------
