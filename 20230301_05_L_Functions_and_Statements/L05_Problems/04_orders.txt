@@ -1,0 +1,50 @@
+20230301 - JavaScript Front-End 202302 - JS Functions and Statements
+04 - Orders - judge: https://judge.softuni.org/Contests/Practice/Index/3788#3
+
+
+Write a function that calculates the total price of an order and prints it on the console.
+The function should receive one of the following products: coffee, coke, water, snacks; and a quantity of the product.
+
+The prices for a single piece of each product are: 
+coffee - 1.50
+water - 1.00
+coke - 1.40
+snacks - 2.00
+
+Print the result formatted to the second decimal place.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+"water", 5
+
+
+Output 1:
+--------
+5.00
+
+
+---------------------------
+
+
+Input 2:
+-------
+"coffee", 2
+
+
+Output 2:
+--------
+3.00
+
+
+---------------------------
+
+
+Hints:
+-----
+    (*) Create a function and pass the two variables in.
+    (*) Print the result in the function.
