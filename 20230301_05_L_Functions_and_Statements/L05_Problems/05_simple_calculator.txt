@@ -58,7 +58,7 @@ Input 3:
 'add'
 
 
-Output 2:
+Output 3:
 --------
 31
 
@@ -73,7 +73,7 @@ Input 4:
 'subtract'
 
 
-Output 2:
+Output 4:
 --------
 37
 
