@@ -1,0 +1,89 @@
+20230301 - JavaScript Front-End 202302 - JS Functions and Statements
+06 - Sign Check - judge: https://judge.softuni.org/Contests/Practice/Index/3788#5
+
+
+Write a function, that checks whether the result of the multiplication numOne * numTwo * numThree is positive or negative.
+Try to do this WITHOUT multiplying the 3 numbers.
+
+
+Input:
+-----
+The input comes as parameters named numOne, numTwo, numThree.
+
+
+Output:
+------
+If the result is positive, print on the console -> "Positive"
+Otherwise, print -> "Negative"
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+ 5,
+ 12,
+-15
+
+
+Output 1:
+--------
+Negative
+
+
+---------------------------
+
+
+Input 2:
+-------
+-6,
+-12,
+ 14
+
+
+Output 2:
+--------
+Positive
+
+
+---------------------------
+
+
+Input 3:
+-------
+-1,
+-2,
+-3
+
+
+Output 3:
+--------
+Negative
+
+
+---------------------------
+
+
+Input 4:
+-------
+-5,
+ 1,
+ 1
+
+
+Output 4:
+--------
+Negative
+
+
+---------------------------
+
+
+
+Hints:
+-----
+Consider how the sign of each of the three input parameters will affect their product.
+Check all the different combinations for the three numbers.
+
