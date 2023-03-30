@@ -2,6 +2,25 @@
 // 06 - Sign Check - judge: https://judge.softuni.org/Contests/Practice/Index/3788#5
 
 
+// ____________ version 2 ______________
+
+
+function signCheck2(...numbers) {
+    return numbers
+        .filter((num) => num < 0)
+        .length % 2 === 0 ? 'Positive' : 'Negative';
+}
+
+
+console.log(signCheck2( 5, 12, -15));
+console.log(signCheck2( -6, -12, 14));
+console.log(signCheck2( -1, -2, -3));
+console.log(signCheck2( -5, 1, 1));
+
+
+// ____________ version 1 ______________
+
+
 function signCheck(num1, num2, num3) {
     let result = '';
 
