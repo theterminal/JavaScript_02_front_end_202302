@@ -2,6 +2,36 @@
 // Page 26 - Problem - Print Certificate
 
 
+// ____________ version 3 _______________ Logic is same as version 1, just unpacking is different
+
+
+function certificate3(grade, names) {
+    let [firstName, lastName] = names;
+    return firstName + ' ' + lastName;
+}
+
+
+console.log(
+    certificate3(5.52, ['Jerry', 'Smith'])
+);
+
+
+// ____________ version 2 _______________ Logic is same as version 1, just unpacking is different
+
+
+function certificate(grade, [firstName, lastName]) {
+    return firstName + ' ' + lastName;
+}
+
+
+console.log(
+    certificate(5.52, ['Jerry', 'Smith'])
+);
+
+
+// ____________ version 1 _______________
+
+
 function printCertificate(grade, array) {
 
     function validateGrade(validateThis) {
