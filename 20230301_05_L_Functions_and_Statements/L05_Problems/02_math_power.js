@@ -30,3 +30,15 @@ function manualMathPower(number, power) {
 
 manualMathPower(2, 8);
 manualMathPower(3, 4);
+
+
+// _______________ version 3 _________________
+
+
+function mathPower3(number, power) {
+    console.log(number ** power);
+}
+
+
+mathPower3(2, 8);
+mathPower3(3, 4);
