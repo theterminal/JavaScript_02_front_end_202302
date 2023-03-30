@@ -2,6 +2,27 @@
 // 03 - Repeat String N Times - judge: https://judge.softuni.org/Contests/Practice/Index/3788#2
 
 
+// ____________ version 2 _________________
+
+
+function repeatString(string, number) {
+    return string.repeat(n);
+}
+
+
+console.log(
+    repeatStringNTimes('abc', 7)
+);
+
+console.log(
+    repeatStringNTimes('String', 3)
+);
+
+
+
+// ____________ version 1 _________________
+
+
 function repeatStringNTimes(string, number) {
     let result = '';
     
