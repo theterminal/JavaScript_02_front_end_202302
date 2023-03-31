@@ -1,0 +1,52 @@
+20230302 - JavaScript Front-End 202302 - JS Functions and Statements - Exercise
+03 - Characters in Range - judge: https://judge.softuni.org/Contests/Compete/Index/3789#2
+
+
+Write a function that receives two characters and prints on a single line all the characters in between them according to the ASCII code.
+Keep in mind that the second character code might be before the first one inside the ASCII table.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+'a',
+'d'
+
+
+Output 1:
+--------
+b c
+
+
+---------------------------
+
+
+Input 2:
+-------
+'#',
+':'
+
+
+Output 2:
+--------
+$ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9
+
+
+---------------------------
+
+
+Input 3:
+-------
+'C',
+'#'
+
+
+Output 3:
+--------
+$ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B
+
+
+---------------------------
