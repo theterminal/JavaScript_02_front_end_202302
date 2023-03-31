@@ -1,0 +1,56 @@
+20230302 - JavaScript Front-End 202302 - JS Functions and Statements - Exercise
+02 - Add and Subtract - judge: https://judge.softuni.org/Contests/Compete/Index/3789#1
+
+
+You will receive three integer numbers. 
+Write a function sum() to calculate the sum of the first two integers and a function subtract(),
+which subtracts the result of the function the sum() and the third integer.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+23,
+6,
+10
+
+
+Output 1:
+--------
+19
+
+
+---------------------------
+
+
+Input 2:
+-------
+1,
+17,
+30
+
+
+Output 2:
+--------
+-12
+
+
+---------------------------
+
+
+Input 3:
+-------
+42,
+58,
+100
+
+
+Output 3:
+--------
+0
+
+
+---------------------------
