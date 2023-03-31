@@ -1,0 +1,70 @@
+20230302 - JavaScript Front-End 202302 - JS Functions and Statements - Exercise
+01 - Smallest of Three Numbers - judge: https://judge.softuni.org/Contests/Compete/Index/3789#0
+
+
+Write a function that receives three integers and prints the smallest number.
+Use an appropriate name for the function.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+ 2,
+5,
+3
+
+
+Output 1:
+--------
+2
+
+
+---------------------------
+
+
+Input 2:
+-------
+600,
+342,
+123
+
+
+Output 2:
+--------
+123
+
+
+---------------------------
+
+
+Input 3:
+-------
+25,
+21,
+4
+
+
+Output 3:
+--------
+4
+
+
+---------------------------
+
+
+Input 4:
+-------
+2,
+2,
+2
+
+
+Output 4:
+--------
+2
+
+
+---------------------------
