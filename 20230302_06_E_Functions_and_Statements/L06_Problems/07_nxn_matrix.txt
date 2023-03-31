@@ -1,0 +1,58 @@
+20230302 - JavaScript Front-End 202302 - JS Functions and Statements - Exercise
+07 - NxN Matrix - judge: https://judge.softuni.org/Contests/Compete/Index/3789#6
+
+
+Write a function that receives a single integer number n and prints nxn matrix with that number.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+3
+
+
+Output 1:
+--------
+3 3 3
+3 3 3
+3 3 3
+
+
+---------------------------
+
+
+Input 2:
+-------
+7
+
+
+Output 2:
+--------
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+
+
+---------------------------
+
+
+Input 3:
+-------
+2
+
+
+Output 3:
+--------
+2 2
+2 2
+
+
+---------------------------
+
