@@ -1,0 +1,36 @@
+20230302 - JavaScript Front-End 202302 - JS Functions and Statements - Exercise
+04 - Odd and Even Sum - judge: https://judge.softuni.org/Contests/Compete/Index/3789#3
+
+
+You will receive a single number.
+You have to write a function, that returns the sum of all even and all odd digits from that number. 
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+1000435
+
+
+Output 1:
+--------
+Odd sum = 9, Even sum = 4
+
+
+---------------------------
+
+
+Input 2:
+-------
+3495892137259234
+
+
+Output 2:
+--------
+Odd sum = 54, Even sum = 22
+
+
+---------------------------
