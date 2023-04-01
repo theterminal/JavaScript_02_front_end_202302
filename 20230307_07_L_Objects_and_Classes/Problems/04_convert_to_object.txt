@@ -1,0 +1,49 @@
+20230307 - JavaScript Front-End 202302 - Objects and Classes
+04 - Convert To Object - judge: https://judge.softuni.org/Contests/Practice/Index/3791#3
+
+
+Write a function that receives a string in JSON format and converts it to an object.
+
+Loop through all the keys and print them with their values in format: "{key}: {value}"
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+'{"name": "George", "age": 40, "town": "Sofia"}'
+
+
+Output 1:
+--------
+name: George
+age: 40
+town: Sofia
+
+
+---------------------------
+
+
+Input 2:
+-------
+'{"name": "Peter", "age": 35, "town": "Plovdiv"}'
+
+
+Output 2:
+--------
+name: Peter
+age: 35
+town: Plovdiv
+
+
+---------------------------
+
+
+Hints:
+-----
+Use JSON.parse() method to parse JSON string to an object
+
+
+---------------------------
