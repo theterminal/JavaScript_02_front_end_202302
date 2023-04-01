@@ -1,0 +1,58 @@
+20230307 - JavaScript Front-End 202302 - Objects and Classes
+02 - City - judge: https://judge.softuni.org/Contests/Practice/Index/3791#1
+
+
+Write a function that receives a single parameter – an object, containing five properties:
+{ name, area, population, country, postcode }
+Loop through all the keys and print them with their values in format: "{key} -> {value}"
+See the examples below.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+{
+    name: "Sofia",
+    area: 492,
+    population: 1238438,
+    country: "Bulgaria",
+    postCode: "1000"
+}
+
+
+Output 1:
+--------
+name -> Sofia
+area -> 492
+population -> 1238438
+country -> Bulgaria
+postCode -> 1000
+
+
+---------------------------
+
+
+Input 2:
+-------
+{
+    name: "Plovdiv",
+    area: 389,
+    population: 1162358,
+    country: "Bulgaria",
+    postCode: "4000"
+}
+
+
+Output 2:
+--------
+name -> Plovdiv
+area -> 389
+population -> 1162358
+country -> Bulgaria
+postCode -> 4000
+
+
+---------------------------
