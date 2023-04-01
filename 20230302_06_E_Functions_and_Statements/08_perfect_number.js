@@ -5,7 +5,7 @@
 function perfectNumber(number) {
     let sum = 1;
 
-    for (let i = 2; i < number; i++) {
+    for (let i = 2; i <= number / 2; i++) {                             // can use it without 'number / 2' just with 'number' but no point doing it
         if (number % i === 0) {
             sum += i;
         }
