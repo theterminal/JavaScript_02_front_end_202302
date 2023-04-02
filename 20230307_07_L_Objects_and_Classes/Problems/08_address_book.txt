@@ -1,0 +1,60 @@
+20230307 - JavaScript Front-End 202302 - Objects and Classes
+08 - Address Book - judge: https://judge.softuni.org/Contests/Practice/Index/3791#7
+
+
+Write a function that stores information about a person’s name and his address.
+The input comes as an array of strings.
+Each string contains the name and the address separated by a colon.
+If you receive the same name twice just replace the address.
+In the end, print the full list, sorted alphabetically by the person’s name.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+['Tim:Doe Crossing',
+ 'Bill:Nelson Place',
+ 'Peter:Carlyle Ave',
+ 'Bill:Ornery Rd']
+
+
+Output 1:
+--------
+Bill -> Ornery Rd
+Peter -> Carlyle Ave
+Tim -> Doe Crossing
+
+
+---------------------------
+
+
+Input 2:
+-------
+['Bob:Huxley Rd',
+'John:Milwaukee Crossing',
+'Peter:Fordem Ave',
+'Bob:Redwing Ave',
+'George:Mesta Crossing',
+'Ted:Gateway Way',
+'Bill:Gateway Way',
+'John:Grover Rd',
+'Peter:Huxley Rd',
+'Jeff:Gateway Way',
+'Jeff:Huxley Rd']
+
+
+Output 2:
+--------
+Bill -> Gateway Way
+Bob -> Redwing Ave
+George -> Mesta Crossing
+Jeff -> Huxley Rd
+John -> Grover Rd
+Peter -> Huxley Rd
+Ted -> Gateway Waye
+
+
+---------------------------
