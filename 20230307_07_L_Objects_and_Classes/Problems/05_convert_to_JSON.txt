@@ -1,0 +1,45 @@
+20230307 - JavaScript Front-End 202302 - Objects and Classes
+05 - Convert To JSON - judge: https://judge.softuni.org/Contests/Practice/Index/3791#4
+
+
+Write a function that receives a first name, last name, hair color and sets them to an object.
+Convert the object to JSON string and print it.
+Input is provided as 3 single strings in the order stated above.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+'George', 'Jones', 'Brown'
+
+
+Output 1:
+--------
+{"name":"George","lastName":"Jones","hairColor":"Brown"}
+
+
+---------------------------
+
+
+Input 2:
+-------
+'Peter', 'Smith', 'Blond'
+
+
+Output 2:
+--------
+{"name":"Peter","lastName":"Smith","hairColor":"Blond"}
+
+
+---------------------------
+
+
+Hints:
+-----
+Use JSON.stringify() to parse the object to JSON string
+
+
+---------------------------
