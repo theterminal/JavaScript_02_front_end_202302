@@ -12,7 +12,7 @@ console.log('\n __________ ex. forin 02 __________ object __________  \n');
 
 let cat = {name: 'Tom', age: 12, color: 'blue'};
 
-for (const key in cat) {                                                    // 'key' is teh key in the object and is used to get the 'value'
+for (const key in cat) {                                                    // 'key' is the key in the object and is used to get the 'value'
     console.log(key + ' : ' + cat[key]);
 }
 
