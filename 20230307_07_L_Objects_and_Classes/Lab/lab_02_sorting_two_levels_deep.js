@@ -8,10 +8,12 @@ let heroes = [
     {
         name: 'Batman',
         level: 10
-    },{
+    },
+    {
         name: 'Superman',
         level: 20
-    },{
+    },
+    {
         name: 'Wonder Woman',
         level: 30
     }
