@@ -1,0 +1,53 @@
+20230309 - JavaScript Front-End 202302 - Objects and Classes - Exercises
+10 - Vehicle - judge: https://judge.softuni.org/Contests/Compete/Index/3792#9
+
+
+Create a class with the name Vehicle that has the following properties:
+type – a string
+model – a string
+parts – an object that contains:
+engine – number (quality of the engine)
+power – number
+quality – engine * power
+fuel – a number
+drive – a method that receives fuel loss and decreases the fuel of the vehicle by that number
+The constructor should receive the type, the model, the parts as an object, and the fuel
+In judge post your class (Note: all names should be as described)
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+let parts = { engine: 6, power: 100 };
+let vehicle = new Vehicle('a', 'b', parts, 200);
+vehicle.drive(100);
+console.log(vehicle.fuel);
+console.log(vehicle.parts.quality);
+
+
+Output 1:
+--------
+100
+600
+
+
+---------------------------
+
+
+Input 2:
+-------
+let parts = {engine: 9, power: 500};
+let vehicle = new Vehicle('l', 'k', parts, 840);
+vehicle.drive(20);
+console.log(vehicle.fuel);
+
+
+Output 2:
+--------
+820
+
+
+---------------------------
