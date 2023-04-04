@@ -1,12 +1,23 @@
 function calc() {
-    // TODO: sum = num1 + num2
-    const num1Input = document.getElementById('num1');
-    const num2Input = document.getElementById('num2');
-    const sumInput = document.getElementById('sum');
+    const inputNum1 = Number(document.getElementById('num1').value);
+    const inputNum2 = Number(document.getElementById('num2').value);
+    const inputSum = document.getElementById('sum');
 
-    let numOne = Number(num1Input.value);
-    let numTwo = Number(num2Input.value);
+    inputSum.value = inputNum1 + inputNum2;
+}
+
+
+// _______________ longer version ______________ to use must change the function name to calc
+
+
+function calc2() {
+    const inputNum1 = document.getElementById('num1');
+    const inputNum2 = document.getElementById('num2');
+    const inputSum = document.getElementById('sum');
+
+    let numOne = Number(inputNum1.value);
+    let numTwo = Number(inputNum2.value);
     let sum = numOne + numTwo;
 
-    sumInput.value = sum;
+    inputSum.value = sum;
 }
