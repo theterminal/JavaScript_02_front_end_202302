@@ -29,6 +29,7 @@ while (j <= 5) {
 console.log('\n ____________ forof Loop _______________ \n');
 
 
+// It is used to read data and NOT to chage it.
 // Used mainly for ARRAYS. The arrays have built-in iterator. The objects don't have iterators so we don't use 'forof' there.
 // It goes through every element of the array.
 
