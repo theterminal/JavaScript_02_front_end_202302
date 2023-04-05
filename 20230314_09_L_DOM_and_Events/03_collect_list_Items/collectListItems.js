@@ -9,10 +9,11 @@ function extractText() {
 
 
     // additional information
-    liElements                              // check the console to see the result there
-    .forEach((li) => {
-        console.log(li.textContent);
-    })
+    // check the console to see the result there
+    liElements
+        .forEach((li) => {
+            console.log(li.textContent);
+        })
 }
 
 
