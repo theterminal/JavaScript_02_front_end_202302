@@ -2,22 +2,86 @@
 // Array method sort(), reverse()
 
 
-// -------------------------------------------------------------------------------------------------------------------
+// Main resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+
+// The sort() method returns a reference to the original array, so mutating the returned array will mutate the original array as well.
+// In case you want sort() to NOT mutate the original array, but return a shallow-copied array like other array methods (e.g. map()) do, you can do a shallow copy before calling sort(), using the spread syntax or Array.from().
 
 
-// https://www.w3schools.com/js/js_array_sort.asp
-// The sort() method sorts the array alphabetically.
-
-console.log('\n _____ ex. 1 _____ sort() ________________________________________________________________________ \n');
+// ------------------------------------------------------------------------------------------------
+console.log('\n _________ Creating, displaying, and sorting an array __________ \n');
 
 
-let stringArray1 = ['Jerry', 'Bob', 'Apple', 'apple'];
-stringArray1.sort();
-
-console.log(stringArray1);                               // [ 'Apple', 'Bob', 'Jerry', 'apple' ]          - It sorts the string array in ascending order using the ASCii table!!!
+// The following example creates four arrays and displays the original array, then the sorted arrays.
+// The numeric arrays are sorted without a compare function, then sorted using one.
 
 
-// -------------------------------------------------------------------------------------------------------------------
+const stringArray = ["Blue", "Humpback", "Beluga"];
+const numberArray = [40, 1, 5, 200];
+const numericStringArray = ["80", "9", "700"];
+const mixedNumericArray = ["80", "9", "700", 40, 1, 5, 200];
+
+function compareNumbers(a, b) {
+  return a - b;
+}
+
+function compareNumbersRev(a, b) {                                          // KK added
+    return b - a;
+  }
+
+console.log(stringArray.join());                                            // 'Blue,Humpback,Beluga'
+console.log(stringArray.sort());                                            // ['Beluga', 'Blue', 'Humpback']
+
+console.log(numberArray.join());                                            // '40,1,5,200'
+console.log(numberArray.sort());                                            // [1, 200, 40, 5]
+console.log(numberArray.sort(compareNumbers));                              // [1, 5, 40, 200]
+
+console.log(numericStringArray.join());                                     // '80,9,700'
+console.log(numericStringArray.sort());                                     // ['700', '80', '9']
+console.log(numericStringArray.sort(compareNumbers));                       // ['9', '80', '700']
+
+console.log(mixedNumericArray.join());                                      // '80,9,700,40,1,5,200'
+console.log(mixedNumericArray.sort());                                      // [1, 200, 40, 5, '700', '80', '9']
+console.log(mixedNumericArray.sort(compareNumbers));                        // [1, 5, '9', 40, '80', 200, '700']
+console.log(mixedNumericArray.sort(compareNumbersRev));                     // ['700', 200, '80', 40, '9', 5, 1] - KK added 
+
+
+// ------------------------------------------------------------------------------------------------
+console.log('\n __________ Sorting array of objects __________ \n');
+
+
+// Arrays of objects can be sorted by comparing the value of one of their properties.
+
+
+const items = [
+    { name: "Edward", value: 21 },
+    { name: "Sharpe", value: 37 },
+    { name: "And", value: 45 },
+    { name: "The", value: -12 },
+    { name: "Magnetic", value: 13 },
+    { name: "Zeros", value: 37 },
+  ];
+  
+// sort by value
+items.sort((a, b) => a.value - b.value);
+  
+// sort by name
+items.sort((a, b) => {
+const nameA = a.name.toUpperCase();                                     // ignore upper and lowercase
+const nameB = b.name.toUpperCase();                                     // ignore upper and lowercase
+if (nameA < nameB) {
+    return -1;
+}
+if (nameA > nameB) {
+    return 1;
+}
+
+// names must be equal
+return 0;
+});
+
+
+  // ------------------------------------------------------------------------------------------------
 
 
 // The reverse() method reorders the array in reverse order.
@@ -27,7 +91,7 @@ console.log('\n _____ ex. 2 _____ reverse() ____________________________________
 let stringArray2 = ['Jerry', 'Bob', 'Apple', 'apple'];
 stringArray2.reverse();
 
-console.log(stringArray2);                               // [ 'apple', 'Apple', 'Bob', 'Jerry' ]          - It reverses a string array in the revered order
+console.log(stringArray2);  // [ 'apple', 'Apple', 'Bob', 'Jerry' ]          - It reverses a string array in the reversed order
 
 
 // -------------------------------------------------------------------------------------------------------------------
@@ -299,3 +363,18 @@ console.log(ascendingOrder(numericArray16));
 console.log(ascendingOrder(stringArray16));
 console.log(descendingOrder(numericArray16));
 console.log(descendingOrder(stringArray16));
+
+
+// ________
+
+
+let array100 = [1, 3, 2].sort();                                                // [1, 2, 3]
+console.log(array100.length);
+
+const cmp = {
+    asc: (x, y) => x >= y,
+    dsc: (x, y) => x <= y
+};
+
+let array101 = [1, 3, 2].sort(cmp[this.key || "asc"]);                          // [1, 2, 3]
+console.log(array101);                                         
