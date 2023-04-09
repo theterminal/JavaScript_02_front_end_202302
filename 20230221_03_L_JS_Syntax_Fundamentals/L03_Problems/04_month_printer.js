@@ -2,6 +2,26 @@
 // Problem 04 - Month Printer - judge: https://judge.softuni.org/Contests/Practice/Index/3785#3
 
 
+// _________________ version 2 ________________
+
+
+function monthPrint(number) {
+    const montArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    if (number > 12 || number < 1) {
+        return console.log('Error!');
+    }
+    console.log(montArray[number - 1]);
+}
+
+
+monthPrint(2);
+monthPrint(13);
+
+
+// _________________ version 1 ________________
+
+
 function monthPrinter(number) {
     if (number > 12 || number < 1) {
         console.log('Error!');
