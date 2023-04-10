@@ -4,15 +4,17 @@
 
 function printEveryNthElement(arr, number) {
     let result = [];
+
     for (let i = 0; i < arr.length; i += number) {
         result.push(arr[i]);
     }
-    console.log(result);
-    console.log(result.join(' '));                                  // different output format
-    console.log(result.join('\n'));                                 // different output format
+    
+    return result;
+    // return result.join(' ');                                  // different output format
+    // return result.join('\n');                                 // different output format
 }
 
 
-printEveryNthElement(['5', '20', '31', '4', '20'], 2);
-printEveryNthElement(['dsa', 'asd', 'test', 'tset'], 2);
-printEveryNthElement(['1', '2', '3', '4', '5'], 6);
+console.log(printEveryNthElement(['5', '20', '31', '4', '20'], 2));
+console.log(printEveryNthElement(['dsa', 'asd', 'test', 'tset'], 2));
+console.log(printEveryNthElement(['1', '2', '3', '4', '5'], 6));
