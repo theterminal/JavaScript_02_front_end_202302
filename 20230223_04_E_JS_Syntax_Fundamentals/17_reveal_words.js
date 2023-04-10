@@ -6,7 +6,7 @@ function revealWords(words, template) {
     let wordsArray = words.split(', ');
     let counter = 0;
     
-    for (let i = 0; i <= template.length; i++) {                                    // if 'i <= template.length' does NOT include '=', the loop will never go to the last element and if the word to replace is located at the end of the string then it will skip the replacement part of the loop and the program will not complete correctly.
+    for (let i = 0; i <= template.length; i++) {
         if (template[i] === '*') {
             counter++;
         } else {
@@ -15,7 +15,7 @@ function revealWords(words, template) {
             } else {
                 wordsArray.forEach(element => {
                     if (element.length === counter) {
-                        stringToUse = '';
+                        let stringToUse = '';
 
                         for (let j = 0; j < counter; j++) {
                             stringToUse += '*';
