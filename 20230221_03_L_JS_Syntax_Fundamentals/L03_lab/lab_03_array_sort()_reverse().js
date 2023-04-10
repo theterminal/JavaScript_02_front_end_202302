@@ -21,11 +21,11 @@ const numberArray = [40, 1, 5, 200];
 const numericStringArray = ["80", "9", "700"];
 const mixedNumericArray = ["80", "9", "700", 40, 1, 5, 200];
 
-function compareNumbers(a, b) {
+function compareNumbersAscending(a, b) {
   return a - b;
 }
 
-function compareNumbersRev(a, b) {                                          // KK added
+function compareNumbersDescending(a, b) {                                   // KK added
     return b - a;
   }
 
@@ -34,16 +34,17 @@ console.log(stringArray.sort());                                            // [
 
 console.log(numberArray.join());                                            // '40,1,5,200'
 console.log(numberArray.sort());                                            // [1, 200, 40, 5]
-console.log(numberArray.sort(compareNumbers));                              // [1, 5, 40, 200]
+console.log(numberArray.sort(compareNumbersAscending));                     // [1, 5, 40, 200]
+console.log(numberArray.sort(compareNumbersDescending));                    // [ 200, 40, 5, 1 ]
 
 console.log(numericStringArray.join());                                     // '80,9,700'
 console.log(numericStringArray.sort());                                     // ['700', '80', '9']
-console.log(numericStringArray.sort(compareNumbers));                       // ['9', '80', '700']
+console.log(numericStringArray.sort(compareNumbersAscending));              // ['9', '80', '700']
 
 console.log(mixedNumericArray.join());                                      // '80,9,700,40,1,5,200'
 console.log(mixedNumericArray.sort());                                      // [1, 200, 40, 5, '700', '80', '9']
-console.log(mixedNumericArray.sort(compareNumbers));                        // [1, 5, '9', 40, '80', 200, '700']
-console.log(mixedNumericArray.sort(compareNumbersRev));                     // ['700', 200, '80', 40, '9', 5, 1] - KK added 
+console.log(mixedNumericArray.sort(compareNumbersAscending));               // [1, 5, '9', 40, '80', 200, '700']
+console.log(mixedNumericArray.sort(compareNumbersDescending));              // ['700', 200, '80', 40, '9', 5, 1] - KK added 
 
 
 // ------------------------------------------------------------------------------------------------
