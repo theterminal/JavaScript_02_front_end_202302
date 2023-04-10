@@ -7,8 +7,8 @@
 
 function pascalCaseSplitter2(string) {
     console.log(string
-        .split(/(?=[A-Z])/)
-        .join()(", "));
+        .split(/(?=[A-Z])/)                                             // splits the string by the upper case letters
+        .join()(", "));                                                 // joins by ', ' all the array elements
 }
 
 
@@ -25,14 +25,14 @@ function pascalCaseSplitter(string) {
         let code = string[i].charCodeAt(0);
 
         if (code >= 65 && code <= 90) {
-            wordsArrayIndex.push(i);
+            wordsArrayIndex.push(i);                                        // stores all indexes of all uppercase characters from string
         }
     }
 
-    let wordsArray = [];
+    let wordsArray = [];                                                    // will store all words for the result
 
     for (let j = 0; j < wordsArrayIndex.length; j++) {
-        wordsArray.push(string.substring(wordsArrayIndex[j], wordsArrayIndex[j + 1]));
+        wordsArray.push(string.substring(wordsArrayIndex[j], wordsArrayIndex[j + 1]));  // pushes all words between the given indexes
     }
     
     console.log(wordsArray.join(', '));
