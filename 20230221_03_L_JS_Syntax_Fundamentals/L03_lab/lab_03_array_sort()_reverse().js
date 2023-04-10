@@ -27,7 +27,7 @@ function compareNumbersAscending(a, b) {
 
 function compareNumbersDescending(a, b) {                                   // KK added
     return b - a;
-  }
+}
 
 console.log(stringArray.join());                                            // 'Blue,Humpback,Beluga'
 console.log(stringArray.sort());                                            // ['Beluga', 'Blue', 'Humpback']
@@ -44,7 +44,7 @@ console.log(numericStringArray.sort(compareNumbersAscending));              // [
 console.log(mixedNumericArray.join());                                      // '80,9,700,40,1,5,200'
 console.log(mixedNumericArray.sort());                                      // [1, 200, 40, 5, '700', '80', '9']
 console.log(mixedNumericArray.sort(compareNumbersAscending));               // [1, 5, '9', 40, '80', 200, '700']
-console.log(mixedNumericArray.sort(compareNumbersDescending));              // ['700', 200, '80', 40, '9', 5, 1] - KK added 
+console.log(mixedNumericArray.sort(compareNumbersDescending));              // ['700', 200, '80', 40, '9', 5, 1] 
 
 
 // ------------------------------------------------------------------------------------------------
