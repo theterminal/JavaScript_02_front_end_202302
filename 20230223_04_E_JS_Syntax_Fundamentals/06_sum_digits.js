@@ -9,7 +9,7 @@ function sumDigits(number) {
     let result = 0;
     number = String(number);
 
-    for (let i = 0; i < String(number).length; i++) {
+    for (let i = 0; i < number.length; i++) {
         result += Number(number[i]);
     }
     console.log(result);
@@ -30,8 +30,9 @@ function sumDigits2(num) {
     while (num > 0) {
         let lastDigit = num % 10;
         sum += lastDigit;
-        num = Math.trunc(num / 10);                 // truncates everything after the decimal point
-        // num = Math.floor(num / 10);
+        // num = Math.trunc(num / 10);                  // truncates everything after the decimal point
+        // num = Math.floor(num / 10);                  // same as above 
+        num = ~~(num/10);                               // same as above
     }
 
     console.log(sum);
