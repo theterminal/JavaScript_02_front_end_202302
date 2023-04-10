@@ -8,7 +8,7 @@
 function listOfNames3(nameArr) {
     return [...nameArr]
         .sort((a, b) => a.localeCompare(b))                                 // it sorts tha array Ascending
-        .map((nam, index) => `${index + 1}.${nam}`)                         // adds the number in front of each element
+        .map((name, index) => `${index + 1}.${name}`)                         // adds the number in front of each element
         .join('\n');                                                        // joins elements by a new line 
 }
 
