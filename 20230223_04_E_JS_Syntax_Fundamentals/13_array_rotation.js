@@ -3,8 +3,9 @@
 
 
 function arrayRotation(numArray, numberRotations) {
-    for (let i = 0; i < numberRotations; i++) {
-        numberRotations %= numArray.length;                          // could use that syntax to do less rotations. The third example will do 1 rotation instead of 5.
+    numberRotations %= numArray.length;                         // Use this to do less rotations. Example 3 will do 1 rotation instead of 5.
+
+    for (let i = 0; i < numberRotations; i++) {   
         numArray.push(numArray.shift());
     }
     console.log(numArray.join(' '));
