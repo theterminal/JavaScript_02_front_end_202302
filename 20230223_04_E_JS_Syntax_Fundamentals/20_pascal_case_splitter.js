@@ -8,11 +8,11 @@
 function pascalCaseSplitter2(string) {
     console.log(string
         .split(/(?=[A-Z])/)                                             // splits the string by the upper case letters
-        .join()(", "));                                                 // joins by ', ' all the array elements
+        .join(", "));                                                 // joins by ', ' all the array elements
 }
 
 
-pascalCaseSplitter('SplitMeIfYouCanHaHaYouCantOrYouCan');
+pascalCaseSplitter2('SplitMeIfYouCanHaHaYouCantOrYouCan');
 
 
 // _________________ version 1 ____________________
