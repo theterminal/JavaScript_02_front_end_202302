@@ -5,6 +5,7 @@
 
 // ___________ substring(startIndex, endIndex) __________________________ 
 
+
 /*
 The substring() method extracts characters, between two indices (positions), from a string, and returns the substring.
 The substring() method extracts characters from start to end (exclusive).
@@ -15,7 +16,9 @@ Start or end values less than 0, are treated as 0.
 source: https://www.w3schools.com/jsref/jsref_substring.asp
 */
 
+
 console.log('\n____________ Example 1 _____________\n');
+
 
 let str = "I am JavaScript developer";
 let sub = str.substring(5, 10);
@@ -24,6 +27,7 @@ console.log(sub);                                                               
 
 
 // ___________ substr(startIndex, lengthOfCharacters) ___________________
+
 
 // source: https://www.w3schools.com/jsref/jsref_substr.asp
 // The substr() method extracts a part of a string.

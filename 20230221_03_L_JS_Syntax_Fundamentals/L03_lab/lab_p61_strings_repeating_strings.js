@@ -5,6 +5,7 @@
 
 // ___________ repeat(count) - Creates a new string repeated count times ____________
 
+
 let n = 7;
 for(let i = 1; i <= n; i++) {
   console.log('*'.repeat(i));

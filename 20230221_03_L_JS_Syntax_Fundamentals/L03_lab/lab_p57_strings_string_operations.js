@@ -5,6 +5,7 @@
 
 // ___________ replace(search, replacement) ____________
 
+
 let text = "Hello, john@softuni.bg, you have been using john@softuni.bg in your registration.";
 let replacedText = text.replace(".bg", ".com");
 
@@ -12,6 +13,7 @@ console.log(replacedText);          // Hello, john@softuni.com, you have been us
 
 
 // ___________ replace all instances ____________
+
 
 let text_2 = "Hello, john@kirilk777.bg, you have been using borko@didi.bg in your registration.";
 while (text_2.includes('.bg')) {

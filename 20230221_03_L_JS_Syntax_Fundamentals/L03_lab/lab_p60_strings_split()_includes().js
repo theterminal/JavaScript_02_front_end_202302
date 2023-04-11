@@ -5,6 +5,7 @@
 
 // ___________ split(separator) ____________
 
+
 let text = "I love fruits";
 let words = text.split(' ');
 
@@ -12,6 +13,7 @@ console.log(words);                             // Expected output: ['I', 'love'
 
 
 // ___________ includes(substr) ____________
+
 
 let txt = "I love fruits.";
 console.log(txt.includes("fruits"));           // Expected output: True
