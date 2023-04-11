@@ -14,7 +14,7 @@ let found = array_1.find(function(element) {
   return element > 10;
 })
 
-console.log(found);                             // 12
+console.log(found);                                                                   // 12
 
 
 // Another shorter syntax
@@ -22,7 +22,7 @@ console.log(found);                             // 12
 let array_2 = [-12, -15.75, 0, 0.125, 1, 15, 100, 125, 125.75, 10000];
 let found_2 = array_2.find((num) => num > 100);
 
-console.log(found_2);
+console.log(found_2);                                                                 // 125
 
 
 // Another syntax
@@ -30,4 +30,4 @@ console.log(found_2);
 let array_3 = [-12, -15.75, 0, 0.125, 1, 15, 100, 125, 125.75, 10_000];
 let found_3 = array_3.find((num) => num > 125 && num < 10_000);
 
-console.log(found_3);
+console.log(found_3);                                                                 // 125.75
