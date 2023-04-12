@@ -1,0 +1,47 @@
+20230223 - JavaScript Front-End 202302 - JS Syntax Fundamentals - More Exercise
+More Exercise 02 - Words Uppercase - judge: https://judge.softuni.org/Contests/Practice/Index/3787#1
+
+
+Write a program that extracts all words from a passed-in string and converts them to upper case.
+The extracted words in the upper case must be printed on a single line separated by ", ".
+
+The input comes as a single string argument - the text to extract and convert words from.
+The output should be a single line containing the converted string.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+-------
+'Hi, how are you?'
+
+
+Output 1:
+--------
+HI, HOW, ARE, YOU
+
+
+---------------------------
+
+
+Input 2:
+-------
+'hello'
+
+
+Output 2:
+--------
+HELLO
+
+
+---------------------------
+
+
+Hints:
+-----
+You may need to use a Regular Expression or check for all delimiters that can be found in a sentence (ex. ",", " ", "!", "?" and so on).
+
+
+---------------------------
