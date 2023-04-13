@@ -6,9 +6,9 @@
 
 
 function palindromeTest4(numbers) {
-    const isPalindrome = (num) => Number([...num.toString()].reverse().join('')) === num;
+    const isPalindrome = (num) => Number([...num.toString()].reverse().join('')) === num;     // it returns an array of elements 'if (num) === num'
 
-    return numbers
+    return numbers              // It takes 'numbers' and returns the array (isPalindrome) as elements (one per separate line).
         .map(isPalindrome)
         .join('\n');
 }
