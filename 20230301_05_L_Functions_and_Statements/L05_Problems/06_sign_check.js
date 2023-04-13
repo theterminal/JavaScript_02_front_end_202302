@@ -43,7 +43,39 @@ function signCheck(num1, num2, num3) {
     console.log(result);
 }
 
-signCheck( 5, 12, -15);
-signCheck( -6, -12, 14);
-signCheck( -1, -2, -3);
-signCheck( -5, 1, 1);
+signCheck(5, 12, -15);
+signCheck(-6, -12, 14);
+signCheck(-1, -2, -3);
+signCheck(-5, 1, 1);
+
+
+// ___________ version 03 ____________ (CGPTV)
+
+
+function checkProductSign3(numOne, numTwo, numThree) {
+    let countNegatives = 0;
+
+    if (numOne < 0) {
+        countNegatives++;
+    }
+    
+    if (numTwo < 0) {
+        countNegatives++;
+    }
+
+    if (numThree < 0) {
+        countNegatives++;
+    }
+
+    if (countNegatives % 2 === 0) {
+        return "Positive";
+    } else {
+        return "Negative";
+    }
+}
+
+
+console.log(checkProductSign3(5, 12, -15));
+console.log(checkProductSign3(-6, -12, 14));
+console.log(checkProductSign3(-1, -2, -3));
+console.log(checkProductSign3(-5, 1, 1));
