@@ -5,17 +5,17 @@
 // ____________ version 2 _________________
 
 
-function repeatString(string, number) {
+function repeatString(string, n) {
     return string.repeat(n);
 }
 
 
 console.log(
-    repeatStringNTimes('abc', 7)
+    repeatString('abc', 7)
 );
 
 console.log(
-    repeatStringNTimes('String', 3)
+    repeatString('String', 3)
 );
 
 
