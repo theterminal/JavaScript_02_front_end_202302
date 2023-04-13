@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Visualization</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      // Draw the body of the monster
+      ctx.fillStyle = "green";
+      ctx.fillRect(100, 100, 200, 200);
+
+      // Draw the eyes of the monster
+      ctx.fillStyle = "white";
+      ctx.fillRect(120, 120, 40, 40);
+      ctx.fillRect(240, 120, 40, 40);
+
+      // Draw the pupils of the monster's eyes
+      ctx.fillStyle = "black";
+      ctx.fillRect(130, 130, 20, 20);
+      ctx.fillRect(250, 130, 20, 20);
+
+      // Draw the mouth of the monster
+      ctx.fillStyle = "red";
+      ctx.fillRect(150, 250, 100, 50);
+
+      // Draw the teeth of the monster
+      ctx.fillStyle = "white";
+      ctx.fillRect(160, 260, 10, 20);
+      ctx.fillRect(180, 260, 10, 20);
+      ctx.fillRect(200, 260, 10, 20);
+      ctx.fillRect(220, 260, 10, 20);
+      ctx.fillRect(240, 260, 10, 20);
+    </script>
+  </body>
+</html>

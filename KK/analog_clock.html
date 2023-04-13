@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock from CGPT</title>
+    <style>
+      #clock {
+        width: 300px;
+        height: 300px;
+        border: 5px solid #747474;
+        border-radius: 5%;
+        position: relative;
+      }
+      
+      .hand {
+        width: 1px;
+        height: 100px;
+        background-color: black;
+        position: absolute;
+        left: 149px;
+        top: 50px;
+        transform-origin: bottom;
+        transform: rotate(0deg);
+      }
+      
+      #hour {
+        /* height: 70px; */
+        width: 5px;
+        /* height: 70px; */
+        background-color: blue;
+      }
+      
+      #minute {
+        /* height: 90px; */
+        width: 4px;
+      }
+      
+      #second {
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="clock">
+      <div class="hand" id="hour"></div>
+      <div class="hand" id="minute"></div>
+      <div class="hand" id="second"></div>
+    </div>
+    <script>
+      function setClock() {
+        const hourHand = document.getElementById('hour');
+        const minuteHand = document.getElementById('minute');
+        const secondHand = document.getElementById('second');
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+        const hourAngle = (hours % 12) * 30 + (minutes / 60) * 30;
+        const minuteAngle = minutes * 6;
+        const secondAngle = seconds * 6;
+        hourHand.style.transform = `rotate(${hourAngle}deg)`;
+        minuteHand.style.transform = `rotate(${minuteAngle}deg)`;
+        secondHand.style.transform = `rotate(${secondAngle}deg)`;
+      }
+      
+      setClock();
+      setInterval(setClock, 1000);
+    </script>
+  </body>
+</html>

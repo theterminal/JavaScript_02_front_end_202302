@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+  </head>
+  <body>
+    <button id="countButton">Click me!</button>
+    <p>Clicks: <span id="clickCount">0</span></p>
+    <script>
+      const countButton = document.getElementById('countButton');
+      const clickCount = document.getElementById('clickCount');
+      let count = 0;
+
+      countButton.addEventListener('click', () => {
+        count++;
+        clickCount.innerText = count.toString();
+      });
+    </script>
+  </body>
+</html>
