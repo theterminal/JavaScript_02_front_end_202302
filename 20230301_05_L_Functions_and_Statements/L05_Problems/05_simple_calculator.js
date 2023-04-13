@@ -34,6 +34,7 @@ function simpleCalculator3(num1, num2, operation) {
     const subtract = (a, b) => a - b;
     const multiply = (a, b) => a * b;
     const divide = (a, b) => a / b;
+    
     const operationMap = {
         add : add,                                               // key : value pairs. If they are same, can write only one of the 2
         subtract : subtract,
