@@ -36,5 +36,8 @@ function printDNA(input) {
 }
 
 
-// printDNA(4);
+printDNA(1);
+printDNA(2);
+printDNA(3);
+printDNA(4);
 printDNA(10);
