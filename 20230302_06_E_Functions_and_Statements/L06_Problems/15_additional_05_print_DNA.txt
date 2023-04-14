@@ -1,0 +1,51 @@
+20230303 - JavaScript Front-End 202302 - JS Functions and Statements - More Exercise
+More Exercises 05 - Print DNA - judge: https://judge.softuni.org/Contests/Practice/Index/3790#4
+
+
+Write a JS program that prints a DNA helix with a length, specified by the user.
+The helix has a repeating structure, but the symbol in the chain follows the sequence ATCGTTAGGG.
+See the examples for more information.
+The input comes as a single number. It represents the length of the required helix.
+The output is the completed structure, printed on the console.
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+4
+
+
+Output 1:
+--------
+**AT**
+*C--G*
+T----T
+*A--G*
+
+
+---------------------------
+
+
+Input 2:
+-------
+10
+
+
+Output 2:
+--------
+**AT**
+*C--G*
+T----T
+*A--G*
+**GG**
+*A--T*
+C----G
+*T--T*
+**AG**
+*G--G*
+
+
+---------------------------
