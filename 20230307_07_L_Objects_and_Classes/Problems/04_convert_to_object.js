@@ -3,10 +3,11 @@
 
 
 function convertJSONtoObject(jsonString) {
-    let jsonObject = JSON.parse(jsonString);
+    let objFromJSON = JSON.parse(jsonString);
 
-    for (const key of Object.keys(jsonObject)) {
-        console.log(`${key}: ${jsonObject[key]}`);
+    let keys = Object.keys(objFromJSON);
+    for (const key of keys) {
+        console.log(`${key}: ${objFromJSON[key]}`);
     }
 }
 
