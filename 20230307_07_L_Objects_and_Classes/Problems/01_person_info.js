@@ -6,8 +6,12 @@
 
 
 function createObject2(firstName, lastName, age) {
-    let person = {firstName, lastName, age};                                // short syntax when parameter and the key are the same,
-                                                                            // JS automatically assigns the value to that key. 
+    let person = {
+        firstName,                                              // short syntax when parameter and the key are the same...
+        lastName,                                               // ... JS automatically assigns the value to that key ...
+        age                                                     // ... to be equal to the key.                      
+    };                                
+
     return person;
 }
 
@@ -19,7 +23,11 @@ console.log(createObject("Peter", "Pan", "20"));
 
 
 function createObject(param1, param2, param3) {
-    let person = {firstName: param1, lastName: param2, age: param3};
+    let person = {
+        firstName: param1,
+        lastName: param2,
+        age: param3
+    };
  
     return person;
 }
