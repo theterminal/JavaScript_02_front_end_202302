@@ -7,17 +7,21 @@
 // When used with arrays gives the index. See example 03.
 
 
-console.log('\n __________ ex. forin 02 __________ object __________  \n');
+console.log('\n __________ ex. forin 01 __________ object __________  \n');
 
 
-let cat = {name: 'Tom', age: 12, color: 'blue'};
+let cat = {
+    name: 'Tom',
+    age: 12,
+    color: 'blue'
+};
 
 for (const key in cat) {                                                    // 'key' is the key in the object and is used to get the 'value'
     console.log(key + ' : ' + cat[key]);
 }
 
 
-console.log('\n ___________ ex. forin 03 __________array __________ used to get index and then the element at that index in an array __________ \n');
+console.log('\n ___________ ex. forin 02 __________array __________ used to get index and then the element at that index in an array __________ \n');
 
 
 let dog = [12, 23, 23, 23];
