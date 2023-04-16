@@ -12,12 +12,10 @@ function phoneBook3(input) {
         let [name, phoneNumber] = line.split(' ');
 
         // __________ use this section NOT to update an existing key-value pair and comment the one below __________
-
-        // if (!phoneBook.hasOwnProperty(name)) {                   // if the key exists it will NOT update it
-        //     phoneBook[name] = phoneNumber;
+        // if (phoneBook.hasOwnProperty(name)) {                      // if the key exists it will NOT update it
+        //     continue;
         // }
-
-        // __________ use this section to UPDATE an existing key-value pair and comment the one above ______________
+        // __________ end of section NOT to update an existing key-value pair __________
 
         phoneBook[name] = phoneNumber;                              // it will record or update the value of the property 'name'
     }
@@ -29,16 +27,18 @@ function phoneBook3(input) {
 
 
 console.log('\n _______ test 31 ________ \n');
-phoneBook3(['Tim 0834212554',
-'Peter 0877547887',
-'Bill 0896543112',
-'Tim 0876566344']);
+phoneBook3([
+    'Tim 0834212554',
+    'Peter 0877547887',
+    'Bill 0896543112',
+    'Tim 0876566344'
+]);
 
 
 // _________________ version 01 ___________________
 
 
-function phoneBook2(stringArray) {
+function phoneBook(stringArray) {
     let objPhoneBook = {};
 
     stringArray.forEach(element => {
@@ -53,18 +53,21 @@ function phoneBook2(stringArray) {
 }
 
 
-console.log('\n _______ test 11 ________ \n');
-phoneBook2(['Tim 0834212554',
-'Peter 0877547887',
-'Bill 0896543112',
-'Tim 0876566344']);
+console.log('\n _______________ test 11 _______________ \n');
+phoneBook([
+    'Tim 0834212554',
+    'Peter 0877547887',
+    'Bill 0896543112',
+    'Tim 0876566344'
+]);
 
 
 // _________________ version 02 ___________________
 
 
-function phoneBook(stringArray) {
+function phoneBook2(stringArray) {
     let objPhoneBook = {};
+    let arr = [];
 
     stringArray.forEach(element => {
         let kv = element.split(' ');
@@ -78,7 +81,9 @@ function phoneBook(stringArray) {
 
 
 console.log('\n _______ test 21 ________ \n');
-phoneBook(['Tim 0834212554',
-'Peter 0877547887',
-'Bill 0896543112',
-'Tim 0876566344']);
+phoneBook2([
+    'Tim 0834212554',
+    'Peter 0877547887',
+    'Bill 0896543112',
+    'Tim 0876566344'
+]);
