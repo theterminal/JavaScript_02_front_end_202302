@@ -59,3 +59,32 @@ let assArr = {'name': 'John', 'color': 'blue'};                 // 'assArr' - ex
 for (const key in assArr) {                                     // iterating through the keys in 'assArr'
      console.log(key, assArr[key]);                             // printing the 'key value' pairs of the Associative Array 'assArr'
     }
+
+
+console.log('\n Sorting an Associative array by the \'key\' without having a specific title of the property!!! \n')
+
+
+function addressBook(input) {
+    let addressBookMap = {};
+
+    for (const line of input) {                                         // 'for ... of' loop converting an array to an object 
+        let [name, address] = line.split(':');                          // with 'name' as a key and 'address' as a value
+        addressBookMap[name] = address;
+    }
+
+    let sortedNames = Object.keys(addressBookMap)                       // 'sortedNames' is an array of the KEYS only, of the 'addressBookMap'...
+        .sort((nameA, nameB) => nameA.localeCompare(nameB));            // ... sorted alphabetically in ascending order
+
+    for (const name of sortedNames) {                                   // using already sorted names in 'sortedNames'...
+        console.log(`${name} -> ${addressBookMap[name]}`);              // ... to print 'name' -> 'address' pairs from 'addressBookMap'
+    }
+}
+
+
+console.log('\n _____________ test 21 _____________ \n')
+addressBook([
+    'Tim:Doe Crossing',
+    'Bill:Nelson Place',
+    'Peter:Carlyle Ave',
+    'Bill:Ornery Rd'
+]);
