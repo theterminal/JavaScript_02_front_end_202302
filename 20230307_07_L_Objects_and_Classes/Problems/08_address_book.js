@@ -9,16 +9,16 @@
 function addressBook(input) {
     let addressBookMap = {};
 
-    for (const line of input) {                                         // 'forof' loop converting an array to an object 
+    for (const line of input) {                                         // 'for ... of' loop converting an array to an object 
         let [name, address] = line.split(':');                          // with 'name' as a key and 'address' as a value
         addressBookMap[name] = address;
     }
 
-    let sortedNames = Object.keys(addressBookMap)                       // 'sortedNames' is an object which contains
-        .sort((nameA, nameB) => nameA.localeCompare(nameB));            // sorted data from the object 'addressBookMap'
+    let sortedNames = Object.keys(addressBookMap)                       // 'sortedNames' is an array of the KEYS only, of the 'addressBookMap'...
+        .sort((nameA, nameB) => nameA.localeCompare(nameB));            // ... sorted alphabetically in ascending order
 
-    for (const name of sortedNames) {
-        console.log(`${name} -> ${addressBookMap[name]}`);
+    for (const name of sortedNames) {                                   // using already sorted names in 'sortedNames'...
+        console.log(`${name} -> ${addressBookMap[name]}`);              // ... to print 'name' -> 'address' pairs from 'addressBookMap'
     }
 }
 
