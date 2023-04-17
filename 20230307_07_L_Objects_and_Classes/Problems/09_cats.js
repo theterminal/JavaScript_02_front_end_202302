@@ -15,6 +15,7 @@ function cats(inputArray) {
     }
 
     let cats = [];
+    
     for (const line of inputArray) {
         let [name, age] = line.split(' ');
         age = Number(age);
