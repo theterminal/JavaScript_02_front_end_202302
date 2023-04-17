@@ -7,7 +7,7 @@ function wordsTracker2(input) {
     let searchFor = input.shift().split(' ');
     let wordsFound = {};
 
-    for (const word of searchFor) {                                                       // the loop count = to the word count 'searchFor'
+    for (const word of searchFor) {                                                       // the loop count = to the word count of 'searchFor'
         let filteredWordsCount = input.filter((w) => w === word).length;                  // .filter() runs through all the words in the 'input' array
         wordsFound[word] = filteredWordsCount;                                            // it enters the word as 'key' and the count as 'value'
     }
