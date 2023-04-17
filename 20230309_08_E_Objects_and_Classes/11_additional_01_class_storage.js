@@ -27,23 +27,23 @@ class Storage {
 }
 
 
-// console.log('\n __________ test 11 ___________ \n');
-// let product1 = {name: 'Cucumber', price: 1.50, quantity: 15};
-// let product2 = {name: 'Tomato', price: 0.90, quantity: 25};
-// let product3 = {name: 'Bread', price: 1.10, quantity: 8};
-// let storage = new Storage(50);
-// storage.addProduct(product1);
-// storage.addProduct(product2);
-// storage.addProduct(product3);
-// console.log(storage.getProducts());
-// console.log(storage.capacity);
-// console.log(storage.totalCost);
+console.log('\n __________ test 11 ___________ \n');
+let product11 = {name: 'Cucumber', price: 1.50, quantity: 15};
+let product12 = {name: 'Tomato', price: 0.90, quantity: 25};
+let product13 = {name: 'Bread', price: 1.10, quantity: 8};
+let storage1 = new Storage(50);
+storage1.addProduct(product11);
+storage1.addProduct(product12);
+storage1.addProduct(product13);
+console.log(storage1.getProducts());
+console.log(storage1.capacity);
+console.log(storage1.totalCost);
 
 
 console.log('\n __________ test 12 ___________ \n');
-let productOne = {name: 'Tomato', price: 0.90, quantity: 19};
-let productTwo = {name: 'Potato', price: 1.10, quantity: 10};
-let storage = new Storage(30);
-storage.addProduct(productOne);
-storage.addProduct(productTwo);
-console.log(storage.totalCost);
+let product21 = {name: 'Tomato', price: 0.90, quantity: 19};
+let product22 = {name: 'Potato', price: 1.10, quantity: 10};
+let storage2 = new Storage(30);
+storage2.addProduct(product21);
+storage2.addProduct(product22);
+console.log(storage2.totalCost);
