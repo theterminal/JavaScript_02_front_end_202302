@@ -33,10 +33,10 @@ function songs(inputArray) {
 console.log('\n _____________ test 21 _____________ \n');
 songs([
     3,
-    'favourite_DownTown_3:14',
-    'favourite_Kiss_4:16',
-    'favourite_Smooth Criminal_4:01',
-    'favourite'
+    'favorite_DownTown_3:14',
+    'favorite_Kiss_4:16',
+    'favorite_Smooth Criminal_4:01',
+    'favorite'
 ]);
 
 
