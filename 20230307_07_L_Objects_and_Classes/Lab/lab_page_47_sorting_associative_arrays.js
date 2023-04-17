@@ -2,7 +2,7 @@
 // Page 47 - Sorting Associative Arrays 
 
 
-console.log('\n __________________ sorting by ASCENDING by email ________________________________ \n');
+console.log('\n _______ ex. 01 _______ sorting by ASCENDING by email ________________________________ \n');
 
 
 let people1 = {
@@ -27,7 +27,7 @@ for (const [name, info] of sortedByName1) {
 }
 
 
-console.log('\n __________________ sorting DESCENDING by name ___________________________________ \n');
+console.log('\n _______ ex. 02 _______ sorting DESCENDING by name ___________________________________ \n');
 
 
 let people2 = {
@@ -51,7 +51,7 @@ for (const [name, info] of sortedByName2) {
 }
 
 
-console.log('\n _______________ iterating trough the Associative Array using \'for in\' loop _______________ \n');
+console.log('\n _______ ex. 03 _______ iterating trough the Associative Array using \'for in\' loop _______________ \n');
 
 
 let assArr = {'name': 'John', 'color': 'blue'};                 // 'assArr' - example of Associative Array
@@ -61,10 +61,10 @@ for (const key in assArr) {                                     // iterating thr
     }
 
 
-console.log('\n Sorting an Associative array by the \'key\' without having a specific title of the property!!! \n')
+console.log('\n _______ ex. 04 _______ Sorting an Associative array by the \'key\' without having a specific title of the property!!! _______ \n')
 
 
-function addressBook(input) {
+function addressBook4(input) {
     let addressBookMap = {};
 
     for (const line of input) {                                         // 'for ... of' loop converting an array to an object 
@@ -81,8 +81,7 @@ function addressBook(input) {
 }
 
 
-console.log('\n _____________ test 21 _____________ \n')
-addressBook([
+addressBook4([
     'Tim:Doe Crossing',
     'Bill:Nelson Place',
     'Peter:Carlyle Ave',
