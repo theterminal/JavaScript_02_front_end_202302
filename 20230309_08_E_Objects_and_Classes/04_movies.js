@@ -3,7 +3,7 @@
 
 
 function movieParser(input) {
-    let movies = [];                                                // array of objects
+    let movies = [];                                                        // array of objects
 
     for (const line of input) {
         if (line.includes('addMovie')) {                                    // includes() - checks if the 'string' is included in 'line'
@@ -13,7 +13,7 @@ function movieParser(input) {
         } else if (line.includes('directedBy')) {
             let director = line.split('directedBy').pop().trim();           // (' directedBy ')  - trims the space without using .trim()
             let name = line.split('directedBy').shift().trim();
-            adDirector(name, director);
+            addDirector(name, director);
 
         } else if (line.includes('onDate')) {
             let date = line.split('onDate').pop().trim();
@@ -35,7 +35,7 @@ function movieParser(input) {
         movies.push({name: name});
     }
 
-    function adDirector(name, director) {
+    function addDirector(name, director) {
         let movie = movies.find((m) => m.name === name);                    // .find() - searches and returns the object
         if (movie) {
             movie.director = director;
