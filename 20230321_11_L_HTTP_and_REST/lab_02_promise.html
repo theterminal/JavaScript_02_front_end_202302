@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promise</h1>
+
+    <script>
+        // Use only one of the 3 blocks below and comment the other two. See the results in the console.
+
+        // __________ resolve() and .then() __________
+
+
+        // new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         resolve({id: 10, name: 'Kiril'});
+        //     }, 3000);}
+        // )
+        // .then((result) => {
+        //     console.log(result);
+        // })
+
+
+        // __________ .catch() __________  - reject message will be in the console. Must comment this example in order to see the one above.
+
+
+        // new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         reject('Something went wrong!');
+        //     }, 3000);
+        // })
+        // .then((res) => {
+        //     console.log(res);
+        // })
+        // .catch((err) => {
+        //     console.error((err));
+        // })
+
+
+        // __________ .finally() __________ it means that no matter what the result is, '.finally' will be executed __________
+
+
+        new Promise((resolve, reject) => {
+            setTimeout(() => {reject('Something went wrong!');}, 3000);
+        })
+        .then((res) => {console.log(res);})
+        .catch((err) => {console.error((err));})
+        .finally(() => {console.log('Goes here anyway!');})
+
+    </script>
+</body>
+</html>
