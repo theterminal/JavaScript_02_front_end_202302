@@ -4,6 +4,7 @@ function deleteByEmail() {
     let email = input.value;
     
     let tds = document.querySelectorAll('td');
+
     for (let i = 0; i < tds.length; i += 2) {
         if (tds[i + 1].textContent === email) {
             // solution 01 or 02 - uncomment / comment the one you want to use
