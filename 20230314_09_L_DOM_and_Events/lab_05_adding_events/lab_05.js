@@ -21,9 +21,21 @@ btnElement2.addEventListener('mouseover', clickHandler);
 
 function clickHandler(e) {
     // see the result in the console
-    console.log(e.target);          
+    console.log(e.target);
 }
 
+const liEl5 = document.getElementsByTagName('li')[0];
+liEl5.addEventListener('click', f2);
+
+function f2() {
+    liEl5.innerHTML = 'Ha ha';
+
+    if (liEl5.style.backgroundColor === 'lightgreen') {
+        liEl5.style.backgroundColor = 'lightblue';
+    } else {
+        liEl5.style.backgroundColor = 'lightgreen';
+    }
+}
 
 // __________ mouseout __________
 
@@ -35,4 +47,3 @@ function clickHandler(e) {
     // see the result in the console
     console.log(e.currentTarget);          
 }
-
