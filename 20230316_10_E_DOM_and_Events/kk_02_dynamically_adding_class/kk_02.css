@@ -1,0 +1,15 @@
+body {
+    padding: 50px;
+}
+
+.darker-background {
+    background-color: #d9d9d9;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.typography {
+    font-family: 'Courier New', Courier, monospace;
+}
