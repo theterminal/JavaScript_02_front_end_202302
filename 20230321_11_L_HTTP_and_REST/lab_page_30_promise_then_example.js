@@ -1,3 +1,7 @@
+// JavaScript - REST RESTfull
+// Promise - Then Example
+
+
 console.log('Before promise');
 
 new Promise(function (resolve, reject) {
