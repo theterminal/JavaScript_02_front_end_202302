@@ -1,0 +1,49 @@
+11. Right-click on the folder named 'server', containing the 'server.js' file and choose the option 'Open in integrated Terminal'.
+    This will open a Terminal window on the bottom navigated to the folder containing the 'server.js' file.
+
+12. In the terminal enter command: node server.js
+    The response from the server should be:
+
+        Server started on port 3030. You can make requests to http://localhost:3030/
+        Admin panel located at http://localhost:3030/admin
+
+    Leave this window alone like that...
+
+
+================================================================
+
+
+21. Right-click on the folder named 'test' and choose the option 'Open in integrated Terminal'.
+    This will open a Terminal window on the bottom navigated to the folder containing the tests.
+    Leave this window alone like that...
+
+
+================================================================
+
+
+31. Right-click on the folder containing the Problem and choose the option 'Open in integrated Terminal'.
+    This will open a Terminal window on the bottom navigated to the folder containing the problem.
+
+    Enter the command: npm i
+
+    This will install all dependencies from the file package.json and will create more files and folders.
+
+    Enter the command: npm start
+
+    The response from the server will be something like this:
+
+    > http-server -a localhost -p 3000 -P http://localhost:3000? -c-1
+    Starting up http-server, serving ./
+    Available on:  http://localhost:3000
+
+    Now you can open a browser window and go to the address http://localhost:3000
+    That is where the problem data should be entered and received.
+
+
+================================================================
+
+
+41. After finishing the problem delete the created directories and files like 'package-lock.json' and the folder 'node-modules'
+    and close the terminal windows.
+
+
