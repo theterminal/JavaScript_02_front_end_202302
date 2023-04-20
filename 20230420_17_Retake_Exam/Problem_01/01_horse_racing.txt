@@ -1,0 +1,152 @@
+20230420 - JavaScript - Front-End - Exam
+Problem 01 - Horse Racing
+
+
+Now that your friend has become a sports journalist, he has to write down the actions that take place on the racetrack.
+Help him by writing a program that receives commands and prints template sentences.
+
+
+Input:
+=====
+You will receive an array representing the current positions of the horses separated by the pipe symbol: “|".
+The order of the horses is right to left (the one on the far right is 1st and the one on the far left is last).
+
+After that, you will be receiving 4 types of commands.
+When the program receives "Finish", it should stop executing commands.
+
+The commands can be:
+
+    (*) Retake {overtaking-horse} {overtaken-horse}
+        if the overtaking horse is to the left of the overtaken horse, swap the position of the two horses.
+        Then, print the following on the console:
+
+        "{overtaking-horse} retakes {overtaken-horse}."
+
+    (*) Trouble {horse-name}
+        the given horse drops by one position, if it's not in the last position already.
+        If the horse does drop, on the console should be printed:
+
+        "Trouble for {horse-name} - drops one position."
+
+    (*) Rage {horse-name}
+        the given horse rages 2 positions ahead.
+        If the horse is in second position before the command is given, the horse just goes to the first position.
+        If it's already in the first position, it stays in the first position.
+        Then, on the console should be printed:
+
+        "{horse-name} rages 2 positions ahead."
+
+    (*) Miracle
+        the horse in the last position gets enormous power and becomes the first.
+        Then, on the console should be printed:
+
+        "What a miracle - {horse-name} becomes first."
+
+
+Constraints
+===========
+The names of the horses will always be unique.
+All given commands will be valid.
+
+
+Output
+======
+Every command should print its own template sentence.
+After the program receives "Finish", it should print the updated positions of the horses, separated by arrows ("->"):
+
+"{horse3}->{horse2}->{horse1}"
+
+After the updated positions are printed, the winner should be printed as well:
+
+"The winner is: {horse1}"
+
+
+Test Data:
+---------------------------
+
+
+Input 1:
+--------
+(['Bella|Alexia|Sugar',
+'Retake Alexia Sugar',
+'Rage Bella',
+'Trouble Bella',
+'Finish'])
+
+
+Output 1:
+--------
+Alexia retakes Sugar.
+Bella rages 2 positions ahead.
+Trouble for Bella - drops one position.
+Sugar->Bella->Alexia
+The winner is: Alexia
+
+
+---------------------------
+
+
+Input 2:
+-------
+(['Onyx|Domino|Sugar|Fiona',
+'Trouble Onyx',
+'Retake Onyx Sugar',
+'Rage Domino',
+'Miracle',
+'Finish'])
+
+
+
+Output 2:
+--------
+Onyx retakes Sugar.
+Domino rages 2 positions ahead.
+What a miracle - Sugar becomes first.
+Onyx->Fiona->Domino->Sugar
+The winner is: Sugar
+
+
+---------------------------
+
+
+Input 3:
+-------
+(['Fancy|Lilly',
+'Retake Lilly Fancy',
+'Trouble Lilly',
+'Trouble Lilly',
+'Finish',
+'Rage Lilly'])
+
+
+Output 3:
+--------
+Trouble for Lilly - drops one position.
+Lilly->Fancy
+The winner is: Fancy
+
+
+---------------------------
+
+
+Input 4:
+-------
+(['Bella|Alexia|Sugar|Kiril',
+'Retake Alexia Sugar',
+'Rage Bella',
+'Trouble Bella',
+'Miracle',
+'Finish']);
+
+
+Output 4:
+--------
+Alexia retakes Sugar.
+Bella rages 2 positions ahead.
+Trouble for Bella - drops one position.
+What a miracle - Sugar becomes first.
+Bella->Alexia->Kiril->Sugar
+The winner is: Sugar
+
+
+---------------------------
