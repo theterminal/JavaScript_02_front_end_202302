@@ -1,4 +1,4 @@
-// JavaScript Front-End - DOM and Events - Lab
+// 20230314 - JavaScript Front-End - DOM and Events - Lab
 // 01 - Sum Numbers - judge: https://judge.softuni.org/Contests/Practice/Index/3794#0
 
 
