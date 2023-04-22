@@ -1,3 +1,7 @@
+// JavaScript Front-End - DOM and Events - Lab
+// 01 - Sum Numbers - judge: https://judge.softuni.org/Contests/Practice/Index/3794#0
+
+
 function calc() {
     const inputNum1 = Number(document.getElementById('num1').value);
     const inputNum2 = Number(document.getElementById('num2').value);
