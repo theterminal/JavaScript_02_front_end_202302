@@ -13,7 +13,7 @@
 ================================================================
 
 
-21. Right-click on the folder named 'test' and choose the option 'Open in integrated Terminal'.
+21. Right-click on the folder named 'tests' and choose the option 'Open in integrated Terminal'.
     This will open a Terminal window on the bottom navigated to the folder containing the tests.
     Leave this window alone like that...
 
