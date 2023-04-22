@@ -1,9 +1,13 @@
+// 20230314 - JavaScript Front-End - DOM and Events - Lab
+// 05 - Delete From Table - judge: https://judge.softuni.org/Contests/Practice/Index/3794#4
+
+
 // _________ version 03 ____________ use version 01 or 02 or 03. Not all at the same time.
 
 
 function deleteByEmail() {
-    const result = document.querySelector('#result');
     const email = document.querySelector('input[name="email"]').value;
+    const result = document.querySelector('#result');
     let tds = document.querySelectorAll('td');
     let flag = false;
 
