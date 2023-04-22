@@ -1,11 +1,14 @@
+// 20230314 - JavaScript Front-End - DOM and Events - Lab
+// 06 - Add Delete - judge: https://judge.softuni.org/Contests/Practice/Index/3794#5
+
+
 function addItem() {
-    const ulContainer = document.getElementById('items');
     const input = document.getElementById('newItemText');
-    
+    const ulContainer = document.getElementById('items');
+
     const newAnchor = document.createElement('a');
     newAnchor.setAttribute('href', '#');
-    // next line is same as the one above
-    // newAnchor.href = '#';
+    // can be done this way too: newAnchor.href = '#';
     newAnchor.textContent = '[Delete]';
     newAnchor.addEventListener('click', deleteHandler);
 
@@ -16,7 +19,7 @@ function addItem() {
 
     input.value = '';
 
-
+    // functions section
     function deleteHandler(e) {
         // in next line 'e.currentTarget' can be 'this'
         const liItem = e.currentTarget.parentElement;
