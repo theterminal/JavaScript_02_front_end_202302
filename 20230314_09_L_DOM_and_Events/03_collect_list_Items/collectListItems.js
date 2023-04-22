@@ -1,3 +1,7 @@
+// 20230314 - JavaScript Front-End - DOM and Events - Lab
+// 03 - Collect List Items - judge: https://judge.softuni.org/Contests/Practice/Index/3794#2
+
+
 function extractText() {
     let liElements = Array.from(document.querySelectorAll('#items > li'));
     let textarea = document.querySelector('#result');
@@ -5,14 +9,6 @@ function extractText() {
     liElements
         .forEach((li) => {
             textarea.value += li.textContent + '\n'
-        })
-
-
-    // additional information
-    // check the console to see the result there
-    liElements
-        .forEach((li) => {
-            console.log(li.textContent);
         })
 }
 
