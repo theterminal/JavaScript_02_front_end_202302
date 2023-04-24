@@ -1,3 +1,7 @@
+// 20230314 - JavaScript Front-End - DOM and Events - Lab
+// 09 - Highlight Active - judge: https://judge.softuni.org/Contests/Practice/Index/3794#8
+
+
 function focused() {
     let inputs = document.getElementsByTagName("input");
 
