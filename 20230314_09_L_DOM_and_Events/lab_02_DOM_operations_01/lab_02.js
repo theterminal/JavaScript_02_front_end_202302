@@ -13,10 +13,13 @@ for (const li of liElements) {
         li.textContent = 'Open the console and find the logged \'id\' of the third element';
         
         // open the console and will see the 'dynamic' class attribute added to the third element
-        li.setAttribute('class', 'dynamic');
+        li.classList.add('dynamic-0');          // adds class 'dynamic-0' - syntax 01 (keeps existing classes)
+        li.setAttribute('class', 'dynamic-1');  // adds class 'dynamic-1' - syntax 02 (deletes existing classes)
+        li.className = 'dynamic-2';             // adds class 'dynamic-2' - syntax 03 (deletes existing classes)
 
         // this changes the background color ot the 'li' element
-        li.style.backgroundColor = 'lightblue';
+        // li.style.backgroundColor = 'lightblue';
+        li.setAttribute('style', 'background-color: lightgreen');
 
         // this line (if 'active') will hide the element from the page
         // li.style.display = 'none';
